@@ -9,7 +9,11 @@ var connectionString = builder.Configuration.GetConnectionString("E_project2025C
 
 builder.Services.AddDbContext<E_project2025Context>(options => options.UseSqlServer(connectionString));
 
-builder.Services.AddDefaultIdentity<E_project2025User>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<E_project2025Context>();
+builder.Services
+    .AddDefaultIdentity<E_project2025User>(options =>
+        options.SignIn.RequireConfirmedAccount = false)
+    .AddRoles<IdentityRole>()
+    .AddEntityFrameworkStores<E_project2025Context>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

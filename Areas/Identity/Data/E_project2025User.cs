@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
@@ -11,5 +12,7 @@ public class E_project2025User : IdentityUser
 {
     public string FirstName { get; set; }
     public string LastName { get; set; }
+    [DefaultValue(false)]
+    public bool isApproved { get; set; }
 }
 

@@ -4,6 +4,7 @@ using E_project2025.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace E_project2025.Migrations
 {
     [DbContext(typeof(E_project2025Context))]
-    partial class E_project2025ContextModelSnapshot : ModelSnapshot
+    [Migration("20260101052524_duaa")]
+    partial class duaa
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -81,9 +84,6 @@ namespace E_project2025.Migrations
                     b.Property<string>("UserName")
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
-
-                    b.Property<bool>("isApproved")
-                        .HasColumnType("bit");
 
                     b.HasKey("Id");
 

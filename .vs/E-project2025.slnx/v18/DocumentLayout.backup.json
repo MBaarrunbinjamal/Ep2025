@@ -1,37 +1,69 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Baarrun\\C#\\E-project2025\\",
+  "WorkspaceRootPath": "C:\\Users\\Aptech\\source\\repos\\Ep2025\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|d:\\baarrun\\c#\\e-project2025\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|c:\\users\\aptech\\source\\repos\\ep2025\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|d:\\baarrun\\c#\\e-project2025\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|c:\\users\\aptech\\source\\repos\\ep2025\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|d:\\baarrun\\c#\\e-project2025\\areas\\identity\\pages\\account\\resetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:areas\\identity\\pages\\account\\resetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|c:\\users\\aptech\\source\\repos\\ep2025\\areas\\identity\\pages\\account\\externallogin.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:areas\\identity\\pages\\account\\externallogin.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|d:\\baarrun\\c#\\e-project2025\\areas\\identity\\pages\\account\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:areas\\identity\\pages\\account\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|c:\\users\\aptech\\source\\repos\\ep2025\\areas\\identity\\pages\\account\\externallogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:areas\\identity\\pages\\account\\externallogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|d:\\baarrun\\c#\\e-project2025\\areas\\identity\\pages\\account\\resetpasswordconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:areas\\identity\\pages\\account\\resetpasswordconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|d:\\baarrun\\c#\\e-project2025\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|d:\\baarrun\\c#\\e-project2025\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|c:\\users\\aptech\\source\\repos\\ep2025\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|d:\\baarrun\\c#\\e-project2025\\migrations\\20251230044913_m2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Aptech\\source\\repos\\Ep2025\\Migrations\\20260101054049_m4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20260101054049_m4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|c:\\users\\aptech\\source\\repos\\ep2025\\areas\\identity\\data\\e_project2025user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:areas\\identity\\data\\e_project2025user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Aptech\\source\\repos\\Ep2025\\Migrations\\20260101052524_duaa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20260101052524_duaa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|c:\\users\\aptech\\source\\repos\\ep2025\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|c:\\users\\aptech\\source\\repos\\ep2025\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|c:\\users\\aptech\\source\\repos\\ep2025\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|c:\\users\\aptech\\source\\repos\\ep2025\\areas\\identity\\pages\\account\\resetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:areas\\identity\\pages\\account\\resetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|c:\\users\\aptech\\source\\repos\\ep2025\\areas\\identity\\pages\\account\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:areas\\identity\\pages\\account\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|c:\\users\\aptech\\source\\repos\\ep2025\\areas\\identity\\pages\\account\\resetpasswordconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:areas\\identity\\pages\\account\\resetpasswordconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|c:\\users\\aptech\\source\\repos\\ep2025\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|c:\\users\\aptech\\source\\repos\\ep2025\\migrations\\20251230044913_m2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:migrations\\20251230044913_m2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -42,104 +74,220 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 10,
               "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\Baarrun\\C#\\E-project2025\\Views\\Shared\\_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Aptech\\source\\repos\\Ep2025\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\Baarrun\\C#\\E-project2025\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Aptech\\source\\repos\\Ep2025\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAJMAAAAAAAAAAAAgwKIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAgwCUAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-12-30T05:17:46.39Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ExternalLogin.cshtml",
+              "DocumentMoniker": "C:\\Users\\Aptech\\source\\repos\\Ep2025\\Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml",
+              "ToolTip": "C:\\Users\\Aptech\\source\\repos\\Ep2025\\Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-01T05:53:47.419Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Register.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Aptech\\source\\repos\\Ep2025\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ToolTip": "C:\\Users\\Aptech\\source\\repos\\Ep2025\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ViewState": "AgIAAHUAAAAAAAAAAIA0wIQAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T05:44:06.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Aptech\\source\\repos\\Ep2025\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Aptech\\source\\repos\\Ep2025\\Program.cs*",
+              "RelativeToolTip": "Program.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T05:23:05.977Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ExternalLogin.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Aptech\\source\\repos\\Ep2025\\Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml.cs",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml.cs",
+              "ToolTip": "C:\\Users\\Aptech\\source\\repos\\Ep2025\\Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml.cs",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml.cs",
+              "ViewState": "AgIAAKAAAAAAAAAAAAAcwKYAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T05:53:51.504Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "20260101054049_m4.cs",
+              "DocumentMoniker": "C:\\Users\\Aptech\\source\\repos\\Ep2025\\Migrations\\20260101054049_m4.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260101054049_m4.cs",
+              "ToolTip": "C:\\Users\\Aptech\\source\\repos\\Ep2025\\Migrations\\20260101054049_m4.cs",
+              "RelativeToolTip": "Migrations\\20260101054049_m4.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T05:40:50.095Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "E_project2025User.cs",
+              "DocumentMoniker": "C:\\Users\\Aptech\\source\\repos\\Ep2025\\Areas\\Identity\\Data\\E_project2025User.cs",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Data\\E_project2025User.cs",
+              "ToolTip": "C:\\Users\\Aptech\\source\\repos\\Ep2025\\Areas\\Identity\\Data\\E_project2025User.cs",
+              "RelativeToolTip": "Areas\\Identity\\Data\\E_project2025User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T05:39:34.014Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\Aptech\\source\\repos\\Ep2025\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\Aptech\\source\\repos\\Ep2025\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAuwEoAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-28T17:09:00.051Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "20260101052524_duaa.cs",
+              "DocumentMoniker": "C:\\Users\\Aptech\\source\\repos\\Ep2025\\Migrations\\20260101052524_duaa.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260101052524_duaa.cs",
+              "ToolTip": "C:\\Users\\Aptech\\source\\repos\\Ep2025\\Migrations\\20260101052524_duaa.cs",
+              "RelativeToolTip": "Migrations\\20260101052524_duaa.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T05:25:24.835Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ScaffoldingReadMe.txt",
+              "DocumentMoniker": "C:\\Users\\Aptech\\source\\repos\\Ep2025\\ScaffoldingReadMe.txt",
+              "RelativeDocumentMoniker": "ScaffoldingReadMe.txt",
+              "ToolTip": "C:\\Users\\Aptech\\source\\repos\\Ep2025\\ScaffoldingReadMe.txt",
+              "RelativeToolTip": "ScaffoldingReadMe.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-01-01T05:23:12.133Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Aptech\\source\\repos\\Ep2025\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Aptech\\source\\repos\\Ep2025\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAACaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-30T04:48:03.556Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "20251230044913_m2.cs",
-              "DocumentMoniker": "D:\\Baarrun\\C#\\E-project2025\\Migrations\\20251230044913_m2.cs",
+              "DocumentMoniker": "C:\\Users\\Aptech\\source\\repos\\Ep2025\\Migrations\\20251230044913_m2.cs",
               "RelativeDocumentMoniker": "Migrations\\20251230044913_m2.cs",
-              "ToolTip": "D:\\Baarrun\\C#\\E-project2025\\Migrations\\20251230044913_m2.cs",
+              "ToolTip": "C:\\Users\\Aptech\\source\\repos\\Ep2025\\Migrations\\20251230044913_m2.cs",
               "RelativeToolTip": "Migrations\\20251230044913_m2.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-30T04:49:14.148Z"
+              "WhenOpened": "2025-12-30T04:49:14.148Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Baarrun\\C#\\E-project2025\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "D:\\Baarrun\\C#\\E-project2025\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-12-30T04:48:03.556Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 13,
               "Title": "ResetPasswordConfirmation.cshtml",
-              "DocumentMoniker": "D:\\Baarrun\\C#\\E-project2025\\Areas\\Identity\\Pages\\Account\\ResetPasswordConfirmation.cshtml",
+              "DocumentMoniker": "C:\\Users\\Aptech\\source\\repos\\Ep2025\\Areas\\Identity\\Pages\\Account\\ResetPasswordConfirmation.cshtml",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\ResetPasswordConfirmation.cshtml",
-              "ToolTip": "D:\\Baarrun\\C#\\E-project2025\\Areas\\Identity\\Pages\\Account\\ResetPasswordConfirmation.cshtml",
+              "ToolTip": "C:\\Users\\Aptech\\source\\repos\\Ep2025\\Areas\\Identity\\Pages\\Account\\ResetPasswordConfirmation.cshtml",
               "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\ResetPasswordConfirmation.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-29T17:32:23.831Z"
+              "WhenOpened": "2025-12-29T17:32:23.831Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 11,
               "Title": "ResetPassword.cshtml",
-              "DocumentMoniker": "D:\\Baarrun\\C#\\E-project2025\\Areas\\Identity\\Pages\\Account\\ResetPassword.cshtml",
+              "DocumentMoniker": "C:\\Users\\Aptech\\source\\repos\\Ep2025\\Areas\\Identity\\Pages\\Account\\ResetPassword.cshtml",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\ResetPassword.cshtml",
-              "ToolTip": "D:\\Baarrun\\C#\\E-project2025\\Areas\\Identity\\Pages\\Account\\ResetPassword.cshtml",
+              "ToolTip": "C:\\Users\\Aptech\\source\\repos\\Ep2025\\Areas\\Identity\\Pages\\Account\\ResetPassword.cshtml",
               "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\ResetPassword.cshtml",
               "ViewState": "AgIAACkAAAAAAAAAAAAgwDQAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-29T17:32:09.843Z"
+              "WhenOpened": "2025-12-29T17:32:09.843Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 12,
               "Title": "ForgotPassword.cshtml",
-              "DocumentMoniker": "D:\\Baarrun\\C#\\E-project2025\\Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml",
+              "DocumentMoniker": "C:\\Users\\Aptech\\source\\repos\\Ep2025\\Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml",
-              "ToolTip": "D:\\Baarrun\\C#\\E-project2025\\Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml",
+              "ToolTip": "C:\\Users\\Aptech\\source\\repos\\Ep2025\\Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml",
               "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml",
               "ViewState": "AgIAABQAAAAAAAAAAAAowDcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-29T17:30:06.029Z"
+              "WhenOpened": "2025-12-29T17:30:06.029Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 14,
               "Title": "Login.cshtml",
-              "DocumentMoniker": "D:\\Baarrun\\C#\\E-project2025\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\Aptech\\source\\repos\\Ep2025\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Login.cshtml",
-              "ToolTip": "D:\\Baarrun\\C#\\E-project2025\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\Aptech\\source\\repos\\Ep2025\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
               "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Login.cshtml",
               "ViewState": "AgIAAE4AAAAAAAAAAAAgwGkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-29T17:28:47.013Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "D:\\Baarrun\\C#\\E-project2025\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "ToolTip": "D:\\Baarrun\\C#\\E-project2025\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAuwGIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-28T17:09:00.051Z"
+              "WhenOpened": "2025-12-29T17:28:47.013Z",
+              "EditorCaption": ""
             }
           ]
         }
