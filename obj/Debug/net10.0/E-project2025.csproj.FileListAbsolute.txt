@@ -1683,3 +1683,4 @@ C:\Users\Aptech\source\repos\Ep2025\obj\Debug\net10.0\refint\E-project2025.dll
 C:\Users\Aptech\source\repos\Ep2025\obj\Debug\net10.0\E-project2025.pdb
 C:\Users\Aptech\source\repos\Ep2025\obj\Debug\net10.0\E-project2025.genruntimeconfig.cache
 C:\Users\Aptech\source\repos\Ep2025\obj\Debug\net10.0\ref\E-project2025.dll
+D:\Baarrun\C#\E-project2025\bin\Debug\net10.0\Microsoft.AspNetCore.Authentication.Google.dll
