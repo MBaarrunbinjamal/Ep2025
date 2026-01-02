@@ -1,8 +1,9 @@
+using E_project2025.Areas.Identity.Data;
+using E_project2025.Data;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using E_project2025.Data;
-using E_project2025.Areas.Identity.Data;
-using Microsoft.AspNetCore.Builder;
 
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("E_project2025ContextConnection") ?? throw new InvalidOperationException("Connection string 'E_project2025ContextConnection' not found.");;
@@ -20,7 +21,18 @@ builder.Services.AddAuthentication()
         options.ClientId = builder.Configuration["GoogleKeys:ClientId"];
         options.ClientSecret = builder.Configuration["GoogleKeys:ClientSecret"];
     });
-
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+})
+.AddCookie()
+.AddGitHub(options =>
+{
+    options.ClientId = builder.Configuration["GitHubKeys:ClientId"];
+    options.ClientSecret = builder.Configuration["GitHubKeys:ClientSecret"];
+    // Default callback path is /signin-github
+    options.CallbackPath = "/signin-github";
+});
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();

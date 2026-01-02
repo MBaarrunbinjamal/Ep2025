@@ -2,6 +2,22 @@
   "version": 3,
   "targets": {
     "net10.0": {
+      "AspNet.Security.OAuth.GitHub/9.4.1": {
+        "type": "package",
+        "compile": {
+          "lib/net9.0/AspNet.Security.OAuth.GitHub.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/AspNet.Security.OAuth.GitHub.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Azure.Core/1.47.1": {
         "type": "package",
         "dependencies": {
@@ -2548,6 +2564,21 @@
     }
   },
   "libraries": {
+    "AspNet.Security.OAuth.GitHub/9.4.1": {
+      "sha512": "a8sTvOMlDlh8g9OUvxK3NUtNP8lnOCKZr1RyIiDVMc8nCiGMf0cFjkUfsnfP0q8SpkRjMtIwYT0ig0gMgeoFDA==",
+      "type": "package",
+      "path": "aspnet.security.oauth.github/9.4.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "README.md",
+        "aspnet.security.oauth.github.9.4.1.nupkg.sha512",
+        "aspnet.security.oauth.github.nuspec",
+        "lib/net9.0/AspNet.Security.OAuth.GitHub.dll",
+        "lib/net9.0/AspNet.Security.OAuth.GitHub.xml"
+      ]
+    },
     "Azure.Core/1.47.1": {
       "sha512": "oPcncSsDHuxB8SC522z47xbp2+ttkcKv2YZ90KXhRKN0YQd2+7l1UURT9EBzUNEXtkLZUOAB5xbByMTrYRh3yA==",
       "type": "package",
@@ -6685,6 +6716,7 @@
   },
   "projectFileDependencyGroups": {
     "net10.0": [
+      "AspNet.Security.OAuth.GitHub >= 9.4.1",
       "Microsoft.AspNetCore.Authentication.Google >= 10.0.1",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 10.0.1",
       "Microsoft.AspNetCore.Identity.UI >= 10.0.1",
@@ -6694,23 +6726,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jamal\\.nuget\\packages\\": {},
-    "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Admin\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Baarrun\\C#\\E-project2025\\E-project2025.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\Ep2025\\E-project2025.csproj",
       "projectName": "E-project2025",
-      "projectPath": "D:\\Baarrun\\C#\\E-project2025\\E-project2025.csproj",
-      "packagesPath": "C:\\Users\\jamal\\.nuget\\packages\\",
-      "outputPath": "D:\\Baarrun\\C#\\E-project2025\\obj\\",
+      "projectPath": "C:\\Users\\Admin\\Desktop\\Ep2025\\E-project2025.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Admin\\Desktop\\Ep2025\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\jamal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -6719,6 +6751,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -6743,6 +6776,10 @@
       "net10.0": {
         "targetAlias": "net10.0",
         "dependencies": {
+          "AspNet.Security.OAuth.GitHub": {
+            "target": "Package",
+            "version": "[9.4.1, )"
+          },
           "Microsoft.AspNetCore.Authentication.Google": {
             "target": "Package",
             "version": "[10.0.1, )"
