@@ -21,12 +21,14 @@ namespace E_project2025.Areas.Identity.Pages.Account
     public class LoginModel : PageModel
     {
         private readonly SignInManager<E_project2025User> _signInManager;
+        private readonly UserManager<E_project2025User> _userManager;
         private readonly ILogger<LoginModel> _logger;
 
-        public LoginModel(SignInManager<E_project2025User> signInManager, ILogger<LoginModel> logger)
+        public LoginModel(SignInManager<E_project2025User> signInManager, ILogger<LoginModel> logger, UserManager<E_project2025User> userManager)
         {
             _signInManager = signInManager;
             _logger = logger;
+            _userManager = userManager;
         }
 
         /// <summary>
@@ -115,7 +117,18 @@ namespace E_project2025.Areas.Identity.Pages.Account
                 var result = await _signInManager.PasswordSignInAsync(Input.Email, Input.Password, Input.RememberMe, lockoutOnFailure: false);
                 if (result.Succeeded)
                 {
-                    _logger.LogInformation("User logged in.");
+                    var user = await _userManager.FindByEmailAsync(Input.Email);
+                    if (user != null)
+                    {
+                        if (await _userManager.IsInRoleAsync(user, "Admin"))
+                        {
+                            return RedirectToAction("Dashboard", "Admin"); // example admin page
+                        }
+                        else if (await _userManager.IsInRoleAsync(user, "User"))
+                        {
+                            return RedirectToAction("Index", "Home"); // normal user page
+                        }
+                    }
                     return LocalRedirect(returnUrl);
                 }
                 if (result.RequiresTwoFactor)

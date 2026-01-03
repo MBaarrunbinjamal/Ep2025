@@ -17,13 +17,16 @@ builder.Services.AddDbContext<E_project2025Context>(options =>
 );
 
 // Identity
-builder.Services
-    .AddDefaultIdentity<E_project2025User>(options =>
-    {
-        options.SignIn.RequireConfirmedAccount = false;
-    })
-    .AddRoles<IdentityRole>()
-    .AddEntityFrameworkStores<E_project2025Context>();
+builder.Services.AddIdentity<E_project2025User, IdentityRole>(options =>
+{
+    options.SignIn.RequireConfirmedAccount = false;
+})
+.AddEntityFrameworkStores<E_project2025Context>()
+.AddDefaultTokenProviders();
+
+
+
+
 
 // External authentication ONLY
 builder.Services.AddAuthentication()

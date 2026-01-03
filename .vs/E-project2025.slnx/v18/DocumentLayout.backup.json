@@ -1,85 +1,101 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Baarrun\\C#\\Ep2026\\",
+  "WorkspaceRootPath": "C:\\Users\\us\\source\\repos\\Ep2025\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|d:\\baarrun\\c#\\ep2026\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|c:\\users\\us\\source\\repos\\ep2025\\views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|d:\\baarrun\\c#\\ep2026\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|c:\\users\\us\\source\\repos\\ep2025\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|c:\\users\\us\\source\\repos\\ep2025\\areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|c:\\users\\us\\source\\repos\\ep2025\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|d:\\baarrun\\c#\\ep2026\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|d:\\baarrun\\c#\\ep2026\\areas\\identity\\pages\\account\\externallogin.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:areas\\identity\\pages\\account\\externallogin.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|d:\\baarrun\\c#\\ep2026\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|d:\\baarrun\\c#\\ep2026\\areas\\identity\\pages\\account\\externallogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:areas\\identity\\pages\\account\\externallogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|d:\\baarrun\\c#\\ep2026\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|d:\\baarrun\\c#\\ep2026\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|d:\\baarrun\\c#\\ep2026\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|c:\\users\\us\\source\\repos\\ep2025\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|d:\\baarrun\\c#\\ep2026\\areas\\identity\\data\\e_project2025user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\us\\source\\repos\\Ep2025\\Migrations\\20260103190429_b5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20260103190429_b5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|c:\\users\\us\\source\\repos\\ep2025\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|c:\\users\\us\\source\\repos\\ep2025\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|c:\\users\\us\\source\\repos\\ep2025\\areas\\identity\\pages\\account\\externallogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:areas\\identity\\pages\\account\\externallogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|c:\\users\\us\\source\\repos\\ep2025\\areas\\identity\\pages\\account\\externallogin.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:areas\\identity\\pages\\account\\externallogin.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|c:\\users\\us\\source\\repos\\ep2025\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|c:\\users\\us\\source\\repos\\ep2025\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|c:\\users\\us\\source\\repos\\ep2025\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|c:\\users\\us\\source\\repos\\ep2025\\areas\\identity\\data\\e_project2025user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:areas\\identity\\data\\e_project2025user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|d:\\baarrun\\c#\\ep2026\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|c:\\users\\us\\source\\repos\\ep2025\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|d:\\baarrun\\c#\\ep2026\\areas\\identity\\pages\\account\\resetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|c:\\users\\us\\source\\repos\\ep2025\\areas\\identity\\pages\\account\\resetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:areas\\identity\\pages\\account\\resetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|d:\\baarrun\\c#\\ep2026\\areas\\identity\\pages\\account\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|c:\\users\\us\\source\\repos\\ep2025\\areas\\identity\\pages\\account\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:areas\\identity\\pages\\account\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|d:\\baarrun\\c#\\ep2026\\areas\\identity\\pages\\account\\resetpasswordconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|c:\\users\\us\\source\\repos\\ep2025\\areas\\identity\\pages\\account\\resetpasswordconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:areas\\identity\\pages\\account\\resetpasswordconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|d:\\baarrun\\c#\\ep2026\\migrations\\20251230044913_m2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|c:\\users\\us\\source\\repos\\ep2025\\migrations\\20251230044913_m2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:migrations\\20251230044913_m2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|d:\\baarrun\\c#\\ep2026\\migrations\\20260101054049_m4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|c:\\users\\us\\source\\repos\\ep2025\\migrations\\20260101054049_m4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:migrations\\20260101054049_m4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|d:\\baarrun\\c#\\ep2026\\migrations\\20260101052524_duaa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|c:\\users\\us\\source\\repos\\ep2025\\migrations\\20260101052524_duaa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:migrations\\20260101052524_duaa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|d:\\baarrun\\c#\\ep2026\\migrations\\20260101174032_m8k.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|c:\\users\\us\\source\\repos\\ep2025\\migrations\\20260101174032_m8k.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:migrations\\20260101174032_m8k.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|d:\\baarrun\\c#\\ep2026\\migrations\\20260101173806_m80.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|c:\\users\\us\\source\\repos\\ep2025\\migrations\\20260101173806_m80.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:migrations\\20260101173806_m80.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|d:\\baarrun\\c#\\ep2026\\migrations\\20260103053442_m5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|c:\\users\\us\\source\\repos\\ep2025\\migrations\\20260103053442_m5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:migrations\\20260103053442_m5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -90,159 +106,123 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\Baarrun\\C#\\Ep2026\\Views\\Shared\\_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\us\\source\\repos\\Ep2025\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\Baarrun\\C#\\Ep2026\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\us\\source\\repos\\Ep2025\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAACgAAAAAAAAAAAAQwCEAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-12-30T05:17:46.39Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "D:\\Baarrun\\C#\\Ep2026\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "ToolTip": "D:\\Baarrun\\C#\\Ep2026\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "ViewState": "AgIAACIAAAAAAAAAAAAgwC4AAABnAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Dashboard.cshtml",
+              "DocumentMoniker": "C:\\Users\\us\\source\\repos\\Ep2025\\Views\\Admin\\Dashboard.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Dashboard.cshtml",
+              "ToolTip": "C:\\Users\\us\\source\\repos\\Ep2025\\Views\\Admin\\Dashboard.cshtml*",
+              "RelativeToolTip": "Views\\Admin\\Dashboard.cshtml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-28T17:09:00.051Z",
+              "WhenOpened": "2026-01-03T19:30:23.517Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Register.cshtml.cs",
-              "DocumentMoniker": "D:\\Baarrun\\C#\\Ep2026\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "ToolTip": "D:\\Baarrun\\C#\\Ep2026\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "ViewState": "AgIAAH0AAAAAAAAAAAAwwIQAAAAUAAAAAAAAAA==",
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\us\\source\\repos\\Ep2025\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\us\\source\\repos\\Ep2025\\Controllers\\AdminController.cs*",
+              "RelativeToolTip": "Controllers\\AdminController.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-01T05:44:06.787Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ExternalLogin.cshtml",
-              "DocumentMoniker": "D:\\Baarrun\\C#\\Ep2026\\Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml",
-              "ToolTip": "D:\\Baarrun\\C#\\Ep2026\\Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml",
-              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-01T05:53:47.419Z",
+              "WhenOpened": "2026-01-03T19:29:34.992Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Baarrun\\C#\\Ep2026\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "D:\\Baarrun\\C#\\Ep2026\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAgwBIAAACgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-12-30T04:48:03.556Z",
+              "Title": "Login.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\us\\source\\repos\\Ep2025\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "ToolTip": "C:\\Users\\us\\source\\repos\\Ep2025\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs*",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Login.cshtml.cs*",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAAAHgAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T19:20:35.172Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "20260103190429_b5.cs",
+              "DocumentMoniker": "C:\\Users\\us\\source\\repos\\Ep2025\\Migrations\\20260103190429_b5.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260103190429_b5.cs",
+              "ToolTip": "C:\\Users\\us\\source\\repos\\Ep2025\\Migrations\\20260103190429_b5.cs",
+              "RelativeToolTip": "Migrations\\20260103190429_b5.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAgwDgAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T19:04:29.682Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Baarrun\\C#\\Ep2026\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\us\\source\\repos\\Ep2025\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\Baarrun\\C#\\Ep2026\\Program.cs*",
-              "RelativeToolTip": "Program.cs*",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAAAFgAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\us\\source\\repos\\Ep2025\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAewEAAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-01T05:23:05.977Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "_LoginPartial.cshtml",
-              "DocumentMoniker": "D:\\Baarrun\\C#\\Ep2026\\Views\\Shared\\_LoginPartial.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_LoginPartial.cshtml",
-              "ToolTip": "D:\\Baarrun\\C#\\Ep2026\\Views\\Shared\\_LoginPartial.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_LoginPartial.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-03T05:50:44.638Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "20260103053442_m5.cs",
-              "DocumentMoniker": "D:\\Baarrun\\C#\\Ep2026\\Migrations\\20260103053442_m5.cs",
-              "RelativeDocumentMoniker": "Migrations\\20260103053442_m5.cs",
-              "ToolTip": "D:\\Baarrun\\C#\\Ep2026\\Migrations\\20260103053442_m5.cs",
-              "RelativeToolTip": "Migrations\\20260103053442_m5.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-03T05:34:42.293Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ExternalLogin.cshtml.cs",
-              "DocumentMoniker": "D:\\Baarrun\\C#\\Ep2026\\Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml.cs",
-              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml.cs",
-              "ToolTip": "D:\\Baarrun\\C#\\Ep2026\\Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml.cs",
-              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml.cs",
-              "ViewState": "AgIAAJMAAAAAAAAAAAAmwKAAAAAAAAAAAAAAAA==",
+              "Title": "Register.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\us\\source\\repos\\Ep2025\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ToolTip": "C:\\Users\\us\\source\\repos\\Ep2025\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAQwAwAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-01T05:53:51.504Z",
+              "WhenOpened": "2026-01-01T05:44:06.787Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "20260101173806_m80.cs",
-              "DocumentMoniker": "D:\\Baarrun\\C#\\Ep2026\\Migrations\\20260101173806_m80.cs",
-              "RelativeDocumentMoniker": "Migrations\\20260101173806_m80.cs",
-              "ToolTip": "D:\\Baarrun\\C#\\Ep2026\\Migrations\\20260101173806_m80.cs",
-              "RelativeToolTip": "Migrations\\20260101173806_m80.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-01T17:38:07.019Z",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\us\\source\\repos\\Ep2025\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\us\\source\\repos\\Ep2025\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAgwBIAAACFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-30T04:48:03.556Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "20260101174032_m8k.cs",
-              "DocumentMoniker": "D:\\Baarrun\\C#\\Ep2026\\Migrations\\20260101174032_m8k.cs",
-              "RelativeDocumentMoniker": "Migrations\\20260101174032_m8k.cs",
-              "ToolTip": "D:\\Baarrun\\C#\\Ep2026\\Migrations\\20260101174032_m8k.cs",
-              "RelativeToolTip": "Migrations\\20260101174032_m8k.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-01T17:40:39.723Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 4,
               "Title": "Login.cshtml",
-              "DocumentMoniker": "D:\\Baarrun\\C#\\Ep2026\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\us\\source\\repos\\Ep2025\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Login.cshtml",
-              "ToolTip": "D:\\Baarrun\\C#\\Ep2026\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\us\\source\\repos\\Ep2025\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
               "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Login.cshtml",
               "ViewState": "AgIAAEIAAAAAAAAAAAAgwFQAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -251,107 +231,195 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "20260101054049_m4.cs",
-              "DocumentMoniker": "D:\\Baarrun\\C#\\Ep2026\\Migrations\\20260101054049_m4.cs",
-              "RelativeDocumentMoniker": "Migrations\\20260101054049_m4.cs",
-              "ToolTip": "D:\\Baarrun\\C#\\Ep2026\\Migrations\\20260101054049_m4.cs",
-              "RelativeToolTip": "Migrations\\20260101054049_m4.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAIBZwBEAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-01T05:40:50.095Z",
+              "DocumentIndex": 8,
+              "Title": "ExternalLogin.cshtml",
+              "DocumentMoniker": "C:\\Users\\us\\source\\repos\\Ep2025\\Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml",
+              "ToolTip": "C:\\Users\\us\\source\\repos\\Ep2025\\Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-01T05:53:47.419Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "E_project2025User.cs",
-              "DocumentMoniker": "D:\\Baarrun\\C#\\Ep2026\\Areas\\Identity\\Data\\E_project2025User.cs",
-              "RelativeDocumentMoniker": "Areas\\Identity\\Data\\E_project2025User.cs",
-              "ToolTip": "D:\\Baarrun\\C#\\Ep2026\\Areas\\Identity\\Data\\E_project2025User.cs",
-              "RelativeToolTip": "Areas\\Identity\\Data\\E_project2025User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAZAAAAAAAAAA==",
+              "Title": "ExternalLogin.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\us\\source\\repos\\Ep2025\\Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml.cs",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml.cs",
+              "ToolTip": "C:\\Users\\us\\source\\repos\\Ep2025\\Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml.cs",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml.cs",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAmwI0AAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-01T05:39:34.014Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "20260101052524_duaa.cs",
-              "DocumentMoniker": "D:\\Baarrun\\C#\\Ep2026\\Migrations\\20260101052524_duaa.cs",
-              "RelativeDocumentMoniker": "Migrations\\20260101052524_duaa.cs",
-              "ToolTip": "D:\\Baarrun\\C#\\Ep2026\\Migrations\\20260101052524_duaa.cs",
-              "RelativeToolTip": "Migrations\\20260101052524_duaa.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-01T05:25:24.835Z",
+              "WhenOpened": "2026-01-01T05:53:51.504Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "ScaffoldingReadMe.txt",
-              "DocumentMoniker": "D:\\Baarrun\\C#\\Ep2026\\ScaffoldingReadMe.txt",
-              "RelativeDocumentMoniker": "ScaffoldingReadMe.txt",
-              "ToolTip": "D:\\Baarrun\\C#\\Ep2026\\ScaffoldingReadMe.txt",
-              "RelativeToolTip": "ScaffoldingReadMe.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2026-01-01T05:23:12.133Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "20251230044913_m2.cs",
-              "DocumentMoniker": "D:\\Baarrun\\C#\\Ep2026\\Migrations\\20251230044913_m2.cs",
-              "RelativeDocumentMoniker": "Migrations\\20251230044913_m2.cs",
-              "ToolTip": "D:\\Baarrun\\C#\\Ep2026\\Migrations\\20251230044913_m2.cs",
-              "RelativeToolTip": "Migrations\\20251230044913_m2.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-30T04:49:14.148Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ResetPasswordConfirmation.cshtml",
-              "DocumentMoniker": "D:\\Baarrun\\C#\\Ep2026\\Areas\\Identity\\Pages\\Account\\ResetPasswordConfirmation.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\ResetPasswordConfirmation.cshtml",
-              "ToolTip": "D:\\Baarrun\\C#\\Ep2026\\Areas\\Identity\\Pages\\Account\\ResetPasswordConfirmation.cshtml",
-              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\ResetPasswordConfirmation.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\us\\source\\repos\\Ep2025\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\us\\source\\repos\\Ep2025\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ViewState": "AgIAACIAAAAAAAAAAAAgwC4AAABnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-29T17:32:23.831Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ResetPassword.cshtml",
-              "DocumentMoniker": "D:\\Baarrun\\C#\\Ep2026\\Areas\\Identity\\Pages\\Account\\ResetPassword.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\ResetPassword.cshtml",
-              "ToolTip": "D:\\Baarrun\\C#\\Ep2026\\Areas\\Identity\\Pages\\Account\\ResetPassword.cshtml",
-              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\ResetPassword.cshtml",
-              "ViewState": "AgIAACkAAAAAAAAAAAAgwDQAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-29T17:32:09.843Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-28T17:09:00.051Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\us\\source\\repos\\Ep2025\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "C:\\Users\\us\\source\\repos\\Ep2025\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-03T05:50:44.638Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "20260103053442_m5.cs",
+              "DocumentMoniker": "C:\\Users\\us\\source\\repos\\Ep2025\\Migrations\\20260103053442_m5.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260103053442_m5.cs",
+              "ToolTip": "C:\\Users\\us\\source\\repos\\Ep2025\\Migrations\\20260103053442_m5.cs",
+              "RelativeToolTip": "Migrations\\20260103053442_m5.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T05:34:42.293Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "20260101173806_m80.cs",
+              "DocumentMoniker": "C:\\Users\\us\\source\\repos\\Ep2025\\Migrations\\20260101173806_m80.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260101173806_m80.cs",
+              "ToolTip": "C:\\Users\\us\\source\\repos\\Ep2025\\Migrations\\20260101173806_m80.cs",
+              "RelativeToolTip": "Migrations\\20260101173806_m80.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T17:38:07.019Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "20260101174032_m8k.cs",
+              "DocumentMoniker": "C:\\Users\\us\\source\\repos\\Ep2025\\Migrations\\20260101174032_m8k.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260101174032_m8k.cs",
+              "ToolTip": "C:\\Users\\us\\source\\repos\\Ep2025\\Migrations\\20260101174032_m8k.cs",
+              "RelativeToolTip": "Migrations\\20260101174032_m8k.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T17:40:39.723Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "20260101054049_m4.cs",
+              "DocumentMoniker": "C:\\Users\\us\\source\\repos\\Ep2025\\Migrations\\20260101054049_m4.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260101054049_m4.cs",
+              "ToolTip": "C:\\Users\\us\\source\\repos\\Ep2025\\Migrations\\20260101054049_m4.cs",
+              "RelativeToolTip": "Migrations\\20260101054049_m4.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBZwBEAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T05:40:50.095Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "E_project2025User.cs",
+              "DocumentMoniker": "C:\\Users\\us\\source\\repos\\Ep2025\\Areas\\Identity\\Data\\E_project2025User.cs",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Data\\E_project2025User.cs",
+              "ToolTip": "C:\\Users\\us\\source\\repos\\Ep2025\\Areas\\Identity\\Data\\E_project2025User.cs",
+              "RelativeToolTip": "Areas\\Identity\\Data\\E_project2025User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T05:39:34.014Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "20260101052524_duaa.cs",
+              "DocumentMoniker": "C:\\Users\\us\\source\\repos\\Ep2025\\Migrations\\20260101052524_duaa.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260101052524_duaa.cs",
+              "ToolTip": "C:\\Users\\us\\source\\repos\\Ep2025\\Migrations\\20260101052524_duaa.cs",
+              "RelativeToolTip": "Migrations\\20260101052524_duaa.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T05:25:24.835Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ScaffoldingReadMe.txt",
+              "DocumentMoniker": "C:\\Users\\us\\source\\repos\\Ep2025\\ScaffoldingReadMe.txt",
+              "RelativeDocumentMoniker": "ScaffoldingReadMe.txt",
+              "ToolTip": "C:\\Users\\us\\source\\repos\\Ep2025\\ScaffoldingReadMe.txt",
+              "RelativeToolTip": "ScaffoldingReadMe.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-01-01T05:23:12.133Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "20251230044913_m2.cs",
+              "DocumentMoniker": "C:\\Users\\us\\source\\repos\\Ep2025\\Migrations\\20251230044913_m2.cs",
+              "RelativeDocumentMoniker": "Migrations\\20251230044913_m2.cs",
+              "ToolTip": "C:\\Users\\us\\source\\repos\\Ep2025\\Migrations\\20251230044913_m2.cs",
+              "RelativeToolTip": "Migrations\\20251230044913_m2.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T04:49:14.148Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ResetPasswordConfirmation.cshtml",
+              "DocumentMoniker": "C:\\Users\\us\\source\\repos\\Ep2025\\Areas\\Identity\\Pages\\Account\\ResetPasswordConfirmation.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\ResetPasswordConfirmation.cshtml",
+              "ToolTip": "C:\\Users\\us\\source\\repos\\Ep2025\\Areas\\Identity\\Pages\\Account\\ResetPasswordConfirmation.cshtml",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\ResetPasswordConfirmation.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-29T17:32:23.831Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ResetPassword.cshtml",
+              "DocumentMoniker": "C:\\Users\\us\\source\\repos\\Ep2025\\Areas\\Identity\\Pages\\Account\\ResetPassword.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\ResetPassword.cshtml",
+              "ToolTip": "C:\\Users\\us\\source\\repos\\Ep2025\\Areas\\Identity\\Pages\\Account\\ResetPassword.cshtml",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\ResetPassword.cshtml",
+              "ViewState": "AgIAACkAAAAAAAAAAAAgwDQAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-29T17:32:09.843Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "ForgotPassword.cshtml",
-              "DocumentMoniker": "D:\\Baarrun\\C#\\Ep2026\\Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml",
+              "DocumentMoniker": "C:\\Users\\us\\source\\repos\\Ep2025\\Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml",
-              "ToolTip": "D:\\Baarrun\\C#\\Ep2026\\Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml",
+              "ToolTip": "C:\\Users\\us\\source\\repos\\Ep2025\\Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml",
               "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml",
               "ViewState": "AgIAABQAAAAAAAAAAAAowDcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-29T17:30:06.029Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-29T17:30:06.029Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 84,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             }
           ]
         }
