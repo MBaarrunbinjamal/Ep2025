@@ -26,13 +26,10 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
-                         <li class="nav-item">
-     <a class="nav-link text-dark" href="/Identity/Account/Register">Register</a>
- </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" href="/Identity/Account/Login">Login</a>
-                        </li>
-                    </ul>
+                       <li>
+                           <partial name="_LoginPartial"/>
+                       </li>
+                        </ul>
                 </div>
             </div>
         </nav>
