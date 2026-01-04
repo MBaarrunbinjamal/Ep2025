@@ -14,5 +14,11 @@ public class E_project2025User : IdentityUser
     public string LastName { get; set; }
     [DefaultValue(false)]
     public bool isApproved { get; set; }
+    
+    
+        public DateTime? LastLoginAt { get; set; }
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+    
+
 }
 

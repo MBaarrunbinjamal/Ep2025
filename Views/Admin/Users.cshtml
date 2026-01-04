@@ -1,0 +1,201 @@
+﻿
+@{
+    ViewData["Title"] = "Users";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+    @model List<E_project2025.Areas.Identity.Data.E_project2025User>
+}
+<style>
+    .sdf {
+        margin-top: 100px;
+        margin-left: 300px;
+    }
+</style>
+<div class="container sdf">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Approved</th>
+                <th>Change Role</th>
+                <th>Aprove User</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            @foreach (var user in Model)
+            {
+                <tr>
+                    <td>@user.FirstName</td>
+                    <td>@user.Email</td>
+                    <td>@user.isApproved</td>
+                    <td>
+<button
+  type="button"
+  class="btn btn-primary btn-lg"
+  data-bs-toggle="modal"
+  data-bs-target="#modalId"
+>
+  Change role
+</button>
+
+<!-- Modal Body -->
+<!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+<div
+  class="modal fade"
+  id="modalId"
+  tabindex="-1"
+  data-bs-backdrop="static"
+  data-bs-keyboard="false"
+  
+  role="dialog"
+  aria-labelledby="modalTitleId"
+  aria-hidden="true"
+>
+  <div
+    class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm"
+    role="document"
+  >
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalTitleId">
+          Select the role
+        </h5>
+       <hr />
+       
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+                                    <div class="modal-body">
+                                        @* <form action="/" method="post"> *@
+                                        <input type="hidden" id="userid" value="@user.Id" />
+
+                                        <div class="d-flex">
+                                            <label><b>Admin</b></label>
+                                            <input type="radio" name="role" value="Admin" style="margin-left:5px" />
+                                        </div>
+
+                                        <div class="d-flex">
+                                            <label><b>Faculty</b></label>
+                                            <input type="radio" name="role" value="Faculty" style="margin-left:5px" />
+                                        </div>
+
+                                        <div class="d-flex">
+                                            <label><b>User</b></label>
+                                            <input type="radio" name="role" value="User" style="margin-left:5px" />
+                                        </div>
+
+                                        <button type="button" id="saveRole" class="btn btn-primary">Save</button>
+
+                                        @* </form> *@
+                                    </div>
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-secondary"
+          data-bs-dismiss="modal"
+        >
+          Close
+        </button>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Optional: Place to the bottom of scripts -->
+<script>
+  const myModal = new bootstrap.Modal(
+    document.getElementById("modalId"),
+    options,
+  );
+</script>
+</td>
+
+                    <td>
+
+                        
+
+                        <input type="hidden" id="userid" value="@user.Id" />
+
+                        <button type="button" id="approve-btn" class="btn btn-success">
+                            Approve User
+                        </button>
+                </tr>
+            }
+        </tbody>
+    </table>>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+    $('#saveRole').click(function () {
+
+        var userId = $('#userid').val();
+        var role = $('input[name="role"]:checked').val();
+
+        if (!role) {
+            Swal.fire({
+                icon: 'warning',
+                title: 'Select a role first'
+            });
+            return;
+        }
+
+        $.ajax({
+            url: '/Admin/ChangeUserRole',   // controller route
+            type: 'POST',
+            data: {
+                userId: userId,
+                role: role
+            },
+            success: function (response) {
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Success',
+                    text: response.message
+                });
+            },
+            error: function () {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Error',
+                    text: 'Something went wrong'
+                });
+            }
+        });
+    });
+    
+     $('#approve-btn').click(function () {
+
+         var userid = $('#userid').val();
+
+         $.ajax({
+             url: '/Admin/Approve',
+             type: 'POST',
+             data: {
+                 userid: userid
+                 },
+             success: function (response) {
+                 Swal.fire({
+                     icon: 'success',
+                     title: 'Approved',
+                     text: response.message
+                 });
+             },
+             error: function () {
+                 Swal.fire({
+                     icon: 'error',
+                     title: 'Error',
+                     text: 'Something went wrong'
+                 });
+             }
+         });
+     });
+
+
+</script>

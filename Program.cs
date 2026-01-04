@@ -1,4 +1,5 @@
-﻿using E_project2025.Areas.Identity.Data;
+﻿using E_project2025;
+using E_project2025.Areas.Identity.Data;
 using E_project2025.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
@@ -46,6 +47,7 @@ builder.Services.AddAuthentication()
 // MVC + Razor Pages
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
+builder.Services.AddScoped<UserAnalyticsService>();
 
 var app = builder.Build();
 
