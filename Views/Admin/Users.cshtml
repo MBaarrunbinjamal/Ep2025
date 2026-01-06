@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     ViewData["Title"] = "Users";
     Layout = "~/Views/Shared/AdminLayout.cshtml";
     @model List<E_project2025.Areas.Identity.Data.E_project2025User>
@@ -30,46 +29,37 @@
                     <td>@user.Email</td>
                     <td>@user.isApproved</td>
                     <td>
-<button
-  type="button"
-  class="btn btn-primary btn-lg"
-  data-bs-toggle="modal"
-  data-bs-target="#modalId"
->
-  Change role
-</button>
+                        <button type="button"
+                                class="btn btn-primary btn-lg"
+                                data-bs-toggle="modal"
+                                data-bs-target="#modalId">
+                            Change role
+                        </button>
 
-<!-- Modal Body -->
-<!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
-<div
-  class="modal fade"
-  id="modalId"
-  tabindex="-1"
-  data-bs-backdrop="static"
-  data-bs-keyboard="false"
-  
-  role="dialog"
-  aria-labelledby="modalTitleId"
-  aria-hidden="true"
->
-  <div
-    class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm"
-    role="document"
-  >
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="modalTitleId">
-          Select the role
-        </h5>
-       <hr />
-       
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="modal"
-          aria-label="Close"
-        ></button>
-      </div>
+                        <!-- Modal Body -->
+                        <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+                        <div class="modal fade"
+                             id="modalId"
+                             tabindex="-1"
+                             data-bs-backdrop="static"
+                             data-bs-keyboard="false"
+                             role="dialog"
+                             aria-labelledby="modalTitleId"
+                             aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm"
+                                 role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="modalTitleId">
+                                            Select the role
+                                        </h5>
+                                        <hr />
+
+                                        <button type="button"
+                                                class="btn-close"
+                                                data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                    </div>
                                     <div class="modal-body">
                                         @* <form action="/" method="post"> *@
                                         <input type="hidden" id="userid" value="@user.Id" />
@@ -93,32 +83,30 @@
 
                                         @* </form> *@
                                     </div>
-      <div class="modal-footer">
-        <button
-          type="button"
-          class="btn btn-secondary"
-          data-bs-dismiss="modal"
-        >
-          Close
-        </button>
+                                    <div class="modal-footer">
+                                        <button type="button"
+                                                class="btn btn-secondary"
+                                                data-bs-dismiss="modal">
+                                            Close
+                                        </button>
 
-      </div>
-    </div>
-  </div>
-</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-<!-- Optional: Place to the bottom of scripts -->
-<script>
-  const myModal = new bootstrap.Modal(
-    document.getElementById("modalId"),
-    options,
-  );
-</script>
-</td>
+                        <!-- Optional: Place to the bottom of scripts -->
+                        <script>
+                            const myModal = new bootstrap.Modal(
+                              document.getElementById("modalId"),
+                              options,
+                            );
+                        </script>
+                    </td>
 
                     <td>
 
-                        
+
 
                         <input type="hidden" id="userid" value="@user.Id" />
 
@@ -169,7 +157,7 @@
             }
         });
     });
-    
+
      $('#approve-btn').click(function () {
 
          var userid = $('#userid').val();
