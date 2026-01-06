@@ -3,51 +3,214 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - E_project2025</title>
-    <script type="importmap"></script>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/E_project2025.styles.css" asp-append-version="true" />
+    <title>@ViewData["Title"] - Eco-Institute Portal</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <style>
+        :root {
+            --primary-green: #1a7431;
+            --secondary-blue: #0d6efd;
+            --accent-red: #dc3545;
+            --glass: rgba(255, 255, 255, 0.9);
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background: linear-gradient(135deg, #f0fdf4 0%, #e0f2fe 100%);
+            overflow-x: hidden;
+        }
+
+        .navbar {
+            background: var(--glass) !important;
+            backdrop-filter: blur(10px);
+            border-bottom: 2px solid var(--primary-green);
+            padding: 15px 0;
+        }
+
+        .navbar-brand {
+            font-weight: 800;
+            font-size: 1.6rem;
+            color: var(--primary-green) !important;
+        }
+
+        .nav-link {
+            font-weight: 600;
+            color: #444 !important;
+            margin: 0 10px;
+        }
+
+        .main-card {
+            background: white;
+            border-radius: 25px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+            padding: 40px;
+            margin-top: 20px;
+        }
+
+        .eco-badge {
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        .btn-logout {
+            background: #fff0f0;
+            color: var(--accent-red);
+            font-weight: 600;
+            border: 1px solid #ffcccc;
+            border-radius: 12px;
+            padding: 8px 20px;
+            transition: 0.3s;
+        }
+
+            .btn-logout:hover {
+                background: var(--accent-red);
+                color: white;
+            }
+
+        .footer {
+            background: #111;
+            color: #ccc;
+            padding: 60px 0 20px;
+            margin-top: 100px;
+        }
+    </style>
 </head>
 <body>
+
+    <div class="announcement-bar bg-danger text-white text-center py-2">
+        <marquee scrollamount="5">New Seminar: "Environmental Health" on Jan 15th. Join via Survey Board.</marquee>
+    </div>
+
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">E_project2025</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                    <i class="bi bi-shield-check text-primary"></i> ECO<span class="text-success">VIBE</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                       <li>
-                           <partial name="_LoginPartial"/>
-                       </li>
-                        </ul>
+
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto align-items-center">
+                        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/Surveys/Board">Surveys</a></li>
+
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <li class="nav-item">
+                                <span class="nav-link text-primary fw-bold">Hello, @User.Identity.Name</span>
+                            </li>
+                            <li class="nav-item ms-lg-3">
+                                <form id="logoutForm" class="form-inline" asp-area="Identity" asp-page="/Account/Logout"
+                                      asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "", logoutSuccess = "true" })">
+                                    <button type="button" onclick="confirmLogout()" class="btn btn-logout">
+                                        Logout
+                                    </button>
+                                </form>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item"><a class="btn btn-outline-primary me-2" href="/Identity/Account/Login">Login</a></li>
+                            <li class="nav-item"><a class="btn btn-success rounded-pill px-4" href="/Identity/Account/Register">Join Now</a></li>
+                        }
+                    </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
+
+    <div class="container mt-4">
+        <main role="main" class="main-card">
+            <div class="text-center mb-5">
+                <span class="eco-badge bg-light text-success border">Digital Initiative 2026</span>
+                <h1 class="display-5 fw-bold mt-2">Saving Nature, One Survey at a Time.</h1>
+            </div>
+
+            <div class="row g-4 mb-4">
+                <div class="col-md-4 text-center">
+                    <div class="p-4 border rounded-4 shadow-sm bg-white h-100">
+                        <i class="bi bi-tree fs-1 text-success"></i>
+                        <h4 class="mt-3">Save Paper</h4>
+                        <p class="text-muted small">Moving institute surveys to 100% digital platform.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="p-4 border rounded-4 shadow-sm bg-white h-100">
+                        <i class="bi bi-award fs-1 text-warning"></i>
+                        <h4 class="mt-3">Get Rewarded</h4>
+                        <p class="text-muted small">Participate in seminars and win environment-friendly prizes.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="p-4 border rounded-4 shadow-sm bg-white h-100">
+                        <i class="bi bi-graph-up-arrow fs-1 text-primary"></i>
+                        <h4 class="mt-3">Real-time Data</h4>
+                        <p class="text-muted small">Instant feedback for faculty and administration.</p>
+                    </div>
+                </div>
+            </div>
+
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2025 - E_project2025 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; 2026 Eco-Institute Portal | Paperless Future</p>
         </div>
     </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+        // 1. Function to show confirmation BEFORE logging out
+        function confirmLogout() {
+            Swal.fire({
+                title: 'Are you sure?',
+                text: "You will need to login again to access surveys!",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#1a7431',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Yes, Logout!'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    document.getElementById('logoutForm').submit();
+                }
+            })
+        }
+
+        // 2. Logic to show SweetAlert AFTER logout is successful
+        $(document).ready(function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.has('logoutSuccess')) {
+                Swal.fire({
+                    title: 'Logged Out!',
+                    text: 'You have been successfully logged out.',
+                    icon: 'success',
+                    timer: 3000,
+                    showConfirmButton: false
+                });
+
+                // Optional: Clean URL to remove the parameter
+                window.history.replaceState({}, document.title, window.location.pathname);
+            }
+        });
+    </script>
+
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
