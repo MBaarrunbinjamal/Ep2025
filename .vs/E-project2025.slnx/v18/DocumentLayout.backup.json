@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\Ep2025\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\Desktop\\Ep2025\\Migrations\\20260106154342_waiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20260106154342_waiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|c:\\users\\admin\\desktop\\ep2025\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|c:\\users\\admin\\desktop\\ep2025\\migrations\\20260106154342_waiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:migrations\\20260106154342_waiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|c:\\users\\admin\\desktop\\ep2025\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -134,33 +134,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Ep2025\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Ep2025\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAALgAAAAAAAAAAAAcwMQAAAAnAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Ep2025\\Views\\Shared\\_Layout.cshtml*",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml*",
+              "ViewState": "AgIAALsAAAAAAAAAAAAqwMgAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-12-30T05:17:46.39Z",
               "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "20260106154342_waiz.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Ep2025\\Migrations\\20260106154342_waiz.cs",
-              "RelativeDocumentMoniker": "Migrations\\20260106154342_waiz.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Ep2025\\Migrations\\20260106154342_waiz.cs",
-              "RelativeToolTip": "Migrations\\20260106154342_waiz.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-06T15:43:43.516Z",
               "EditorCaption": ""
             },
             {
@@ -170,6 +157,19 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "20260106154342_waiz.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Ep2025\\Migrations\\20260106154342_waiz.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260106154342_waiz.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Ep2025\\Migrations\\20260106154342_waiz.cs",
+              "RelativeToolTip": "Migrations\\20260106154342_waiz.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T15:43:43.516Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
