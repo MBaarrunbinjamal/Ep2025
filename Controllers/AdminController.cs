@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace E_project2025.Controllers
 {
 
-    //[Authorize(Roles = "Admin")]
+   
     public class AdminController : Controller
     {
         E_project2025Context dbcontext;
@@ -21,7 +21,7 @@ namespace E_project2025.Controllers
             this._userManager = userManager;
         }
 
-
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Index()
         {
             ViewBag.TotalUsers = await _analytics.TotalUsers();
