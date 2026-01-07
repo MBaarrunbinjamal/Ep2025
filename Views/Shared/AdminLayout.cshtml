@@ -7,28 +7,30 @@
   <title>Flexy Free Bootstrap Admin Template by WrapPixel</title>
   <link rel="shortcut icon" type="image/png" href="~/Admin/assets/images/logos/favicon.png" />
   <link rel="stylesheet" href="~/Admin/assets/css/styles.min.css" />
+  <style>
+  
+   
+    .fa-bars {
+      cursor: pointer;
+      padding: 10px;
+    }
+  </style>
 </head>
 
 <body>
-  <!--  Body Wrapper -->
-  <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
-    data-sidebar-position="fixed" data-header-position="fixed">
+    <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
+         data-sidebar-position="fixed" data-header-position="fixed">
 
-    <!--  App Topstrip -->
-    <div class="app-topstrip bg-dark py-6 px-3 w-100 d-lg-flex align-items-center justify-content-between">
-      <div class="d-flex align-items-center justify-content-center gap-5 mb-2 mb-lg-0">
-        <a class="d-flex justify-content-center" href="#">
+        <div class="app-topstrip bg-dark py-6 px-3 w-100 d-lg-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center justify-content-center gap-5 mb-2 mb-lg-0">
+                @* <a class="d-flex justify-content-center" href="#">
                     <img src="~/Admin/assets/images/logos/logo-wrappixel.svg" alt="" width="150">
-        </a>
-
-        
-      </div>
-
-     
-
-    </div>
+                </a> *@
+                <i class="fa fa-bars text-white" id="sidebarToggler" onclick="toggleSidebar()"></i>
+            </div>
+        </div>
     <!-- Sidebar Start -->
-    <aside class="left-sidebar">
+    <aside class="left-sidebar abd">
       <!-- Sidebar scroll-->
       <div>
         <div class="brand-logo d-flex align-items-center justify-content-between">
@@ -83,6 +85,20 @@
     <script src="~/Admin/assets/js/dashboard.js"></script>
     <!-- solar icons -->
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+    <script>
+        function toggleSidebar() {
+            var element = document.getElementById("main-wrapper");
+
+            // Check screen width to determine behavior
+            if (window.innerWidth > 1199) {
+                // Desktop: Toggle 'hide-sidebar'
+                element.classList.toggle("hide-sidebar");
+            } else {
+                // Mobile: Toggle 'show-sidebar'
+                element.classList.toggle("show-sidebar");
+            }
+        }
+    </script>
 </body>
 
 </html>
