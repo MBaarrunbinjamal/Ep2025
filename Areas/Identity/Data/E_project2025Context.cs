@@ -1,4 +1,5 @@
 ﻿using E_project2025.Areas.Identity.Data;
+using E_project2025.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
@@ -11,6 +12,9 @@ public class E_project2025Context : IdentityDbContext<E_project2025User>
         : base(options)
     {
     }
+    public DbSet<Survay> Survays { get; set; }
+    public DbSet<Question> Questions { get; set; }
+
 
     protected override void OnModelCreating(ModelBuilder builder)
     {

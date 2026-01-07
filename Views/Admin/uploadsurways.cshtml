@@ -1,0 +1,77 @@
+﻿@model E_project2025.Models.Survay
+
+@{
+    ViewData["Title"] = "uploadsurways";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+<style>
+    .sdf {
+        margin-top: 100px;
+        margin-left: 300px;
+    }
+</style>
+   
+
+<div class="container sdf">
+    <h1>uploadsurways</h1>
+
+    <h4>Survay</h4>
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <form id="createsurvay">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="Title" class="control-label"></label>
+                    <input asp-for="Title" class="form-control" id="title" />
+                    <span asp-validation-for="Title" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="UploadedOn" class="control-label"></label>
+                    <input asp-for="UploadedOn" class="form-control" id="uploadedon" />
+                    <span asp-validation-for="UploadedOn" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="ExpiryDate" class="control-label"></label>
+                    <input asp-for="ExpiryDate" class="form-control" id="expiry" />
+                    <span asp-validation-for="ExpiryDate" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary">Create</button>
+
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+<script>
+    $("#createsurvay").on("submit", function (e) {
+        e.preventDefault();
+
+        $.ajax({
+            url: '/Admin/createsurvay',
+            type: 'POST',
+            data: {
+                title: $("#title").val(),
+                expiry: $("#expiry").val()
+            },
+            success: function (response) {
+                if (response.success) {
+                    Swal.fire("Success", response.success, "success");
+                    $("#createsurvay")[0].reset();
+                } else {
+                    Swal.fire("Error", response.error, "error");
+                }
+            },
+            error: function () {
+                Swal.fire("Error", "Server error occurred", "error");
+            }
+        });
+    });
+</script>
