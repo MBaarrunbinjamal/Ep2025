@@ -96,5 +96,11 @@ namespace E_project2025.Controllers
          
           
         }
+        public IActionResult fetchsurvays ()
+        {
+            var a = dbcontext.Survays.ToList();
+            return View(a); 
+        }
+        
     }
 }

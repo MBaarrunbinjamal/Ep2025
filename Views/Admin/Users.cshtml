@@ -3,187 +3,142 @@
     Layout = "~/Views/Shared/AdminLayout.cshtml";
     @model List<E_project2025.Areas.Identity.Data.E_project2025User>
 }
-<style>
-    .sdf {
-        margin-top: 100px;
-        margin-left: 300px;
-    }
-</style>
-<div class="container sdf">
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Username</th>
-                <th>Email</th>
-                <th>Approved</th>
-                <th>Change Role</th>
-                <th>Aprove User</th>
-            </tr>
 
-        </thead>
-        <tbody>
-            @foreach (var user in Model)
-            {
-                <tr>
-                    <td>@user.FirstName</td>
-                    <td>@user.Email</td>
-                    <td>@user.isApproved</td>
-                    <td>
-                        <button type="button"
-                                class="btn btn-primary btn-lg"
-                                data-bs-toggle="modal"
-                                data-bs-target="#modalId">
-                            Change role
-                        </button>
+<div class="body-wrapper">
+    <div class="container-fluid">
+        <div class="card card-body py-3">
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <h4 class="mb-4 mb-sm-0 card-title fw-semibold">User Management</h4>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb mb-0">
+                        <li class="breadcrumb-item"><a href="/Admin/Index">Dashboard</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Users List</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
 
-                        <!-- Modal Body -->
-                        <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
-                        <div class="modal fade"
-                             id="modalId"
-                             tabindex="-1"
-                             data-bs-backdrop="static"
-                             data-bs-keyboard="false"
-                             role="dialog"
-                             aria-labelledby="modalTitleId"
-                             aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm"
-                                 role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="modalTitleId">
-                                            Select the role
-                                        </h5>
-                                        <hr />
-
-                                        <button type="button"
-                                                class="btn-close"
-                                                data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        @* <form action="/" method="post"> *@
-                                        <input type="hidden" id="userid" value="@user.Id" />
-
-                                        <div class="d-flex">
-                                            <label><b>Admin</b></label>
-                                            <input type="radio" name="role" value="Admin" style="margin-left:5px" />
-                                        </div>
-
-                                        <div class="d-flex">
-                                            <label><b>Faculty</b></label>
-                                            <input type="radio" name="role" value="Faculty" style="margin-left:5px" />
-                                        </div>
-
-                                        <div class="d-flex">
-                                            <label><b>User</b></label>
-                                            <input type="radio" name="role" value="User" style="margin-left:5px" />
-                                        </div>
-
-                                        <button type="button" id="saveRole" class="btn btn-primary">Save</button>
-
-                                        @* </form> *@
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button"
-                                                class="btn btn-secondary"
-                                                data-bs-dismiss="modal">
-                                            Close
+        <div class="card">
+            <div class="card-body p-4">
+                <div class="table-responsive">
+                    <table class="table table-hover align-middle text-nowrap mb-0">
+                        <thead class="text-dark fs-4">
+                            <tr>
+                                <th class="border-bottom-0"><h6 class="fw-semibold mb-0">Username</h6></th>
+                                <th class="border-bottom-0"><h6 class="fw-semibold mb-0">Email</h6></th>
+                                <th class="border-bottom-0"><h6 class="fw-semibold mb-0">Status</h6></th>
+                                <th class="border-bottom-0 text-center"><h6 class="fw-semibold mb-0">Role</h6></th>
+                                <th class="border-bottom-0 text-center"><h6 class="fw-semibold mb-0">Action</h6></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var user in Model)
+                            {
+                                <tr>
+                                    <td class="border-bottom-0">@user.FirstName</td>
+                                    <td class="border-bottom-0">@user.Email</td>
+                                    <td class="border-bottom-0">
+                                        @if (user.isApproved)
+                                        {
+                                            <span class="badge bg-light-success text-success fw-semibold">Approved</span>
+                                        }
+                                        else
+                                        {
+                                            <span class="badge bg-light-warning text-warning fw-semibold">Pending</span>
+                                        }
+                                    </td>
+                                    <td class="border-bottom-0 text-center">
+                                        <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-@user.Id">
+                                            Change Role
                                         </button>
 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                                        <div class="modal fade" id="modal-@user.Id" tabindex="-1" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered modal-sm">
+                                                <div class="modal-content text-start">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title">Update Role</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <input type="hidden" class="user-id-hidden" value="@user.Id" />
+                                                        <div class="form-check mb-2">
+                                                            <input class="form-check-input" type="radio" name="role-@user.Id" value="Admin" id="admin-@user.Id">
+                                                            <label class="form-check-label" for="admin-@user.Id">Admin</label>
+                                                        </div>
+                                                        <div class="form-check mb-2">
+                                                            <input class="form-check-input" type="radio" name="role-@user.Id" value="Faculty" id="faculty-@user.Id">
+                                                            <label class="form-check-label" for="faculty-@user.Id">Faculty</label>
+                                                        </div>
+                                                        <div class="form-check mb-2">
+                                                            <input class="form-check-input" type="radio" name="role-@user.Id" value="User" id="user-@user.Id">
+                                                            <label class="form-check-label" for="user-@user.Id">User</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-primary w-100 btn-save-role" data-userid="@user.Id">Save changes</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="border-bottom-0 text-center">
+                                        <button type="button" class="btn btn-success btn-sm btn-approve" data-userid="@user.Id">
+                                            Approve
+                                        </button>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
 
-                        <!-- Optional: Place to the bottom of scripts -->
-                        <script>
-                            const myModal = new bootstrap.Modal(
-                              document.getElementById("modalId"),
-                              options,
-                            );
-                        </script>
-                    </td>
-
-                    <td>
-
-
-
-                        <input type="hidden" id="userid" value="@user.Id" />
-
-                        <button type="button" id="approve-btn" class="btn btn-success">
-                            Approve User
-                        </button>
-                </tr>
-            }
-        </tbody>
-    </table>>
+        <div class="py-6 text-center">
+            <p class="mb-0 fs-4">
+                &copy; @DateTime.Now.Year Design and Developed by
+                <a href="#" class="pe-1 text-primary text-decoration-underline fw-bold">
+                    WAIZ WEB & AI SOLUTIONS
+                </a>
+            </p>
+        </div>
+    </div>
 </div>
+
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 <script>
-    $('#saveRole').click(function () {
+    $(document).ready(function () {
+        $('.btn-save-role').click(function () {
+            var userId = $(this).data('userid');
+            var role = $('input[name="role-' + userId + '"]:checked').val();
 
-        var userId = $('#userid').val();
-        var role = $('input[name="role"]:checked').val();
-
-        if (!role) {
-            Swal.fire({
-                icon: 'warning',
-                title: 'Select a role first'
-            });
-            return;
-        }
-
-        $.ajax({
-            url: '/Admin/ChangeUserRole',   // controller route
-            type: 'POST',
-            data: {
-                userId: userId,
-                role: role
-            },
-            success: function (response) {
-                Swal.fire({
-                    icon: 'success',
-                    title: 'Success',
-                    text: response.message
-                });
-            },
-            error: function () {
-                Swal.fire({
-                    icon: 'error',
-                    title: 'Error',
-                    text: 'Something went wrong'
-                });
+            if (!role) {
+                Swal.fire({ icon: 'warning', title: 'Wait!', text: 'Select a role first' });
+                return;
             }
+
+            $.ajax({
+                url: '/Admin/ChangeUserRole',
+                type: 'POST',
+                data: { userId: userId, role: role },
+                success: function (response) {
+                    Swal.fire({ icon: 'success', title: 'Done', text: response.message }).then(() => location.reload());
+                }
+            });
+        });
+
+        $('.btn-approve').click(function () {
+            var userId = $(this).data('userid');
+            $.ajax({
+                url: '/Admin/Approve',
+                type: 'POST',
+                data: { userid: userId },
+                success: function (response) {
+                    Swal.fire({ icon: 'success', title: 'Approved', text: response.message }).then(() => location.reload());
+                }
+            });
         });
     });
-
-     $('#approve-btn').click(function () {
-
-         var userid = $('#userid').val();
-
-         $.ajax({
-             url: '/Admin/Approve',
-             type: 'POST',
-             data: {
-                 userid: userid
-                 },
-             success: function (response) {
-                 Swal.fire({
-                     icon: 'success',
-                     title: 'Approved',
-                     text: response.message
-                 });
-             },
-             error: function () {
-                 Swal.fire({
-                     icon: 'error',
-                     title: 'Error',
-                     text: 'Something went wrong'
-                 });
-             }
-         });
-     });
-
-
 </script>
