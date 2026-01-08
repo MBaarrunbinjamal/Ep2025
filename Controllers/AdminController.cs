@@ -1,9 +1,14 @@
 ﻿using E_project2025.Areas.Identity.Data;
 using E_project2025.Data;
+using E_project2025.DTO;
+using E_project2025.DTO;
 using E_project2025.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System;
+using System.Security.Claims;
 
 namespace E_project2025.Controllers
 {
@@ -97,10 +102,34 @@ namespace E_project2025.Controllers
           
         }
         public IActionResult fetchsurvays ()
-        {
+        { 
             var a = dbcontext.Survays.ToList();
             return View(a); 
         }
-        
+
+
+[Authorize]
+    [HttpPost]
+    public IActionResult CreateBulk([FromBody] QuestionBulkDto model)
+    {
+        var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+         
+        if (string.IsNullOrEmpty(userId))
+            return Unauthorized();
+
+        var questionList = model.Questions.Select(q => new Question
+        {
+            QuestionText = q,
+            SurvayId = model.SurvayId,
+            UploadedById = userId
+        }).ToList();
+
+        dbcontext.Questions.AddRange(questionList);
+        dbcontext.SaveChanges();
+
+        return Json(new { success = true, message = "Questions inserted successfully!" });
     }
+
+
+}
 }
