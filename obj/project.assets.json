@@ -6726,23 +6726,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jamal\\.nuget\\packages\\": {},
-    "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Admin\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Baarrun\\C#\\Ep2026\\E-project2025.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\Baarun\\Ep2025\\E-project2025.csproj",
       "projectName": "E-project2025",
-      "projectPath": "D:\\Baarrun\\C#\\Ep2026\\E-project2025.csproj",
-      "packagesPath": "C:\\Users\\jamal\\.nuget\\packages\\",
-      "outputPath": "D:\\Baarrun\\C#\\Ep2026\\obj\\",
+      "projectPath": "C:\\Users\\Admin\\Desktop\\Baarun\\Ep2025\\E-project2025.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Admin\\Desktop\\Baarun\\Ep2025\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\jamal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
