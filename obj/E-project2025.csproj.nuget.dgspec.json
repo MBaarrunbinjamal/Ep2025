@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\Admin\\Desktop\\Ep2025\\E-project2025.csproj": {}
   },
   "projects": {
@@ -12,6 +13,19 @@
         "projectPath": "C:\\Users\\Admin\\Desktop\\Ep2025\\E-project2025.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Admin\\Desktop\\Ep2025\\obj\\",
+=======
+    "C:\\Users\\Admin\\Desktop\\Baarun\\Ep2025\\E-project2025.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Admin\\Desktop\\Baarun\\Ep2025\\E-project2025.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\Baarun\\Ep2025\\E-project2025.csproj",
+        "projectName": "E-project2025",
+        "projectPath": "C:\\Users\\Admin\\Desktop\\Baarun\\Ep2025\\E-project2025.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin\\Desktop\\Baarun\\Ep2025\\obj\\",
+>>>>>>> 59a428dc59ee7c9a561d3001261a9c81078dea4c
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,13 +1,19 @@
 ﻿using E_project2025.Areas.Identity.Data;
 using E_project2025.Data;
+using E_project2025.DTO;
+using E_project2025.DTO;
+using E_project2025.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System;
+using System.Security.Claims;
 
 namespace E_project2025.Controllers
 {
 
-    //[Authorize(Roles = "Admin")]
+   
     public class AdminController : Controller
     {
         E_project2025Context dbcontext;
@@ -21,7 +27,7 @@ namespace E_project2025.Controllers
             this._userManager = userManager;
         }
 
-
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Index()
         {
             ViewBag.TotalUsers = await _analytics.TotalUsers();
@@ -49,7 +55,7 @@ namespace E_project2025.Controllers
 
             return Json(new { message = "User role updated successfully!" });
         }
-        //[ValidateAntiForgeryToken]
+        //[ValidateAntiForgeryToken] 
 
         [HttpPost]
         public async Task<IActionResult> Approve(string userid)
@@ -69,6 +75,61 @@ namespace E_project2025.Controllers
 
             return Json(new { message = "User has been approved successfully!" });
         }
+        public IActionResult uploadsurways() {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult createsurvay(string title, DateTime uploadedon, DateTime expiry)
+        {
+            if(title == null || uploadedon == null || expiry == null)
+            {
+                return Json(new { error = "All fields should be filled" }); 
+            }
+            else
+            {
+                var obj = new Survay()
+                {
+                    Title=title,
+                    UploadedOn = uploadedon,
+                    ExpiryDate = expiry,
 
+                };
+                dbcontext.Survays.Add(obj);
+                dbcontext.SaveChanges();
+                return Json(new { success = "survay uploaded successfully"});
+            }
+         
+          
+        }
+        public IActionResult fetchsurvays ()
+        { 
+            var a = dbcontext.Survays.ToList();
+            return View(a); 
+        }
+
+
+[Authorize]
+    [HttpPost]
+    public IActionResult CreateBulk([FromBody] QuestionBulkDto model)
+    {
+        var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+         
+        if (string.IsNullOrEmpty(userId))
+            return Unauthorized();
+
+        var questionList = model.Questions.Select(q => new Question
+        {
+            QuestionText = q,
+            SurvayId = model.SurvayId,
+            UploadedById = userId
+        }).ToList();
+
+        dbcontext.Questions.AddRange(questionList);
+        dbcontext.SaveChanges();
+
+        return Json(new { success = true, message = "Questions inserted successfully!" });
     }
+
+
+}
 }
