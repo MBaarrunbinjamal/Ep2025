@@ -1,14 +1,8 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "tVUPCmw/8v0=",
+  "dgSpecHash": "4e27fZviTUk=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\Desktop\\Ep2025\\E-project2025.csproj",
-=======
-  "dgSpecHash": "Gg73ZUFBvcg=",
-  "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\Desktop\\Baarun\\Ep2025\\E-project2025.csproj",
->>>>>>> 59a428dc59ee7c9a561d3001261a9c81078dea4c
+  "projectFilePath": "C:\\Users\\Admin\\Desktop\\Baarun\\12th Jan Answers Waala Kaam\\Ep2025\\E-project2025.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\aspnet.security.oauth.github\\9.4.1\\aspnet.security.oauth.github.9.4.1.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\azure.core\\1.47.1\\azure.core.1.47.1.nupkg.sha512",
