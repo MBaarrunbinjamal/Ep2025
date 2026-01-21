@@ -14,11 +14,33 @@ public class E_project2025Context : IdentityDbContext<E_project2025User>
     }
     public DbSet<Survay> Survays { get; set; }
     public DbSet<Question> Questions { get; set; }
+    public DbSet<seminar> seminar { get; set; }
+    public DbSet<Answers> Answers { get; set; }
 
 
     protected override void OnModelCreating(ModelBuilder builder)
     {
         base.OnModelCreating(builder);
+        // Survey → Answers
+        builder.Entity<Answers>()
+            .HasOne(a => a.survey)
+            .WithMany()
+            .HasForeignKey(a => a.SurveyId)
+            .OnDelete(DeleteBehavior.Restrict);
+
+        // Question → Answers
+        builder.Entity<Answers>()
+            .HasOne(a => a.questions)
+            .WithMany()
+            .HasForeignKey(a => a.QuestionId)
+            .OnDelete(DeleteBehavior.Restrict);
+
+        // User → Answers
+        builder.Entity<Answers>()
+            .HasOne(a => a.users)
+            .WithMany()
+            .HasForeignKey(a => a.UserId)
+            .OnDelete(DeleteBehavior.Restrict);
         // Customize the ASP.NET Identity model and override the defaults if needed.
         // For example, you can rename the ASP.NET Identity table names and more.
         // Add your customizations after calling base.OnModelCreating(builder);

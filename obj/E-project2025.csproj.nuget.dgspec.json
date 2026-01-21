@@ -1,37 +1,23 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-    "C:\\Users\\Admin\\Desktop\\Ep2025\\E-project2025.csproj": {}
+    "D:\\Baarrun\\Ep2025\\E-project2025.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\Desktop\\Ep2025\\E-project2025.csproj": {
+    "D:\\Baarrun\\Ep2025\\E-project2025.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\Ep2025\\E-project2025.csproj",
+        "projectUniqueName": "D:\\Baarrun\\Ep2025\\E-project2025.csproj",
         "projectName": "E-project2025",
-        "projectPath": "C:\\Users\\Admin\\Desktop\\Ep2025\\E-project2025.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Desktop\\Ep2025\\obj\\",
-=======
-    "C:\\Users\\Admin\\Desktop\\Baarun\\Ep2025\\E-project2025.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\Admin\\Desktop\\Baarun\\Ep2025\\E-project2025.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\Baarun\\Ep2025\\E-project2025.csproj",
-        "projectName": "E-project2025",
-        "projectPath": "C:\\Users\\Admin\\Desktop\\Baarun\\Ep2025\\E-project2025.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Desktop\\Baarun\\Ep2025\\obj\\",
->>>>>>> 59a428dc59ee7c9a561d3001261a9c81078dea4c
+        "projectPath": "D:\\Baarrun\\Ep2025\\E-project2025.csproj",
+        "packagesPath": "C:\\Users\\jamal\\.nuget\\packages\\",
+        "outputPath": "D:\\Baarrun\\Ep2025\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jamal\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -40,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -93,7 +78,7 @@
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[10.0.1, )"
+              "version": "[10.0.2, )"
             }
           },
           "imports": [

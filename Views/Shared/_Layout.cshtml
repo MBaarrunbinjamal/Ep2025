@@ -103,7 +103,7 @@
                 <div class="collapse navbar-collapse" id="mainNav">
                     <ul class="navbar-nav ms-auto align-items-center">
                         <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/Surveys/Board">Surveys</a></li>
+                        <li class="nav-item"><a class="nav-link" asp-action="FetchSurveys" asp-controller="Home">Surveys</a></li>
 
                         @if (User.Identity.IsAuthenticated)
                         {

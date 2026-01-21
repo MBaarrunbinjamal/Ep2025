@@ -1,0 +1,21 @@
+﻿@{
+    @model IEnumerable<E_project2025.Models.Question>
+}
+<h3>@ViewBag.surveyName</h3>
+<hr />
+
+<form asp-action="SubmitAnswers" method="post">
+    <input type="hidden" name="SurveyId" value="@ViewBag.surveyId" />
+
+    @foreach (var item in Model)
+    {
+        <div class="mb-3">
+            <h5>@item.QuestionText</h5>
+            <input type="hidden" name="QuestionIds" value="@item.Id" />
+            <input type="text" name="AnswersText" class="form-control" placeholder="Enter your answer" />
+        </div>
+        <hr />
+    }
+
+    <button type="submit" class="btn btn-success">Submit Answers</button>
+</form>

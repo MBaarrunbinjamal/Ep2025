@@ -19,12 +19,14 @@ namespace E_project2025.Controllers
         E_project2025Context dbcontext;
         private readonly UserAnalyticsService _analytics;
         private readonly UserManager<E_project2025User> _userManager;
+        private readonly RoleManager<IdentityRole> _roleManager;
 
-        public AdminController(E_project2025Context _dbcontext, UserAnalyticsService analytics, UserManager<E_project2025User> userManager = null)
+        public AdminController(E_project2025Context _dbcontext, UserAnalyticsService analytics, UserManager<E_project2025User> userManager = null, RoleManager<IdentityRole> roleManager = null)
         {
             dbcontext = _dbcontext;
             _analytics = analytics;
             this._userManager = userManager;
+            _roleManager = roleManager;
         }
 
         [Authorize(Roles = "Admin")]
@@ -37,10 +39,14 @@ namespace E_project2025.Controllers
 
             return View();
         }
+        //[Authorize(Roles = "Admin")]
+
         public IActionResult Users() {
             var users = dbcontext.Users.ToList();
             return View(users);
         }
+        //[Authorize(Roles = "Admin")]
+
         [HttpPost]
         public async Task<IActionResult> ChangeUserRole(string userId, string role)
         {
@@ -56,6 +62,7 @@ namespace E_project2025.Controllers
             return Json(new { message = "User role updated successfully!" });
         }
         //[ValidateAntiForgeryToken] 
+        //[Authorize(Roles = "Admin")]
 
         [HttpPost]
         public async Task<IActionResult> Approve(string userid)
@@ -75,9 +82,13 @@ namespace E_project2025.Controllers
 
             return Json(new { message = "User has been approved successfully!" });
         }
+        [Authorize(Roles = "Admin")]
+
         public IActionResult uploadsurways() {
             return View();
         }
+        [Authorize(Roles = "Admin")]
+
         [HttpPost]
         public IActionResult createsurvay(string title, DateTime uploadedon, DateTime expiry)
         {
@@ -101,14 +112,17 @@ namespace E_project2025.Controllers
          
           
         }
+        [Authorize(Roles = "Admin")]
+
         public IActionResult fetchsurvays ()
         { 
             var a = dbcontext.Survays.ToList();
             return View(a); 
         }
 
+        [Authorize(Roles = "Admin")]
 
-[Authorize]
+        [Authorize]
     [HttpPost]
     public IActionResult CreateBulk([FromBody] QuestionBulkDto model)
     {
@@ -129,7 +143,40 @@ namespace E_project2025.Controllers
 
         return Json(new { success = true, message = "Questions inserted successfully!" });
     }
+        //[Authorize(Roles = "Admin")]
+        //[HttpPost]
+        public async Task<IActionResult> addseminar()
+        {
+            var admins = await _userManager.GetUsersInRoleAsync("Admin");
+            var employees = await _userManager.GetUsersInRoleAsync("Employee");
+
+            var users = admins
+                .Union(employees)
+                .Distinct()
+                .ToList();
+
+            var vm = new SeminarViewModel
+            {
+                Seminar = new seminar(),
+                Users = users
+            };
+
+            return View(vm);
+        }
+        [HttpPost]
+        public async Task<IActionResult> AddSeminar(SeminarViewModel model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest();
+            } 
+
+            dbcontext.seminar.Add(model.Seminar);
+            await dbcontext.SaveChangesAsync();
+
+            return Ok();
+        }
 
 
-}
+    }
 }
