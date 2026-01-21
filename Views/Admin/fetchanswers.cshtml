@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewData["Title"] = "fetchanswers";
+    Layout = "~/Views/Shared/FacultyLayout.cshtml";
+}
+
+@model IEnumerable<E_project2025.Models.Answers>
+
+<h2>Answers</h2>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Answer</th>
+            <th>Question</th>
+            <th>Survey</th>
+            <th>User</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Answertoquestion</td>
+                <td>@item.questions.QuestionText</td>
+                <td>@item.survey.Title</td>
+                <td>@item.users.UserName</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+

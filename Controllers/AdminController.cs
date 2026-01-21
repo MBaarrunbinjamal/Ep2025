@@ -130,6 +130,18 @@ namespace E_project2025.Controllers
         return Json(new { success = true, message = "Questions inserted successfully!" });
     }
 
+        [Authorize]
+        public IActionResult MyAnswers()
+        {
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
-}
+            var answers = dbcontext.Answers
+                .Include(a => a.questions)
+                .Where(a => a.UserId == userId)
+                .ToList();
+
+            return View("FetchAnswers", answers);
+        }
+
+    }
 }
