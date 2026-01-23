@@ -12,8 +12,13 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace E_project2025.Migrations
 {
     [DbContext(typeof(E_project2025Context))]
+<<<<<<<< HEAD:Migrations/20260120055229_236.Designer.cs
+    [Migration("20260120055229_236")]
+    partial class _236
+========
     [Migration("20260123102028_mutant")]
     partial class mutant
+>>>>>>>> bd9066fd25afaa6bcccdc7b5e5bcc5c465bd5f3b:Migrations/20260123102028_mutant.Designer.cs
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

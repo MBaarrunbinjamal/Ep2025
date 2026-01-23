@@ -6419,11 +6419,27 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "D:\\Baarrun\\Ep2025\\E-project2025.csproj",
       "projectName": "E-project2025",
       "projectPath": "D:\\Baarrun\\Ep2025\\E-project2025.csproj",
       "packagesPath": "C:\\Users\\jamal\\.nuget\\packages\\",
       "outputPath": "D:\\Baarrun\\Ep2025\\obj\\",
+=======
+<<<<<<< HEAD
+      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\Ep2025\\E-project2025.csproj",
+      "projectName": "E-project2025",
+      "projectPath": "C:\\Users\\Admin\\Desktop\\Ep2025\\E-project2025.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Admin\\Desktop\\Ep2025\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\us\\source\\repos\\Ep2025\\E-project2025.csproj",
+      "projectName": "E-project2025",
+      "projectPath": "C:\\Users\\us\\source\\repos\\Ep2025\\E-project2025.csproj",
+      "packagesPath": "C:\\Users\\us\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\us\\source\\repos\\Ep2025\\obj\\",
+>>>>>>> bd9066fd25afaa6bcccdc7b5e5bcc5c465bd5f3b
+>>>>>>> ac442764235d076626439fef4db7d4fa0f9243b1
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -6438,6 +6454,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

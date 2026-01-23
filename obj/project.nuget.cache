@@ -1,8 +1,20 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "nqbrAtitsLo=",
   "success": true,
   "projectFilePath": "D:\\Baarrun\\Ep2025\\E-project2025.csproj",
+=======
+<<<<<<< HEAD
+  "dgSpecHash": "tVUPCmw/8v0=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Admin\\Desktop\\Ep2025\\E-project2025.csproj",
+=======
+  "dgSpecHash": "9nLqWQcwSvU=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\us\\source\\repos\\Ep2025\\E-project2025.csproj",
+>>>>>>> bd9066fd25afaa6bcccdc7b5e5bcc5c465bd5f3b
+>>>>>>> ac442764235d076626439fef4db7d4fa0f9243b1
   "expectedPackageFiles": [
     "C:\\Users\\jamal\\.nuget\\packages\\aspnet.security.oauth.github\\10.0.0\\aspnet.security.oauth.github.10.0.0.nupkg.sha512",
     "C:\\Users\\jamal\\.nuget\\packages\\azure.core\\1.47.1\\azure.core.1.47.1.nupkg.sha512",
