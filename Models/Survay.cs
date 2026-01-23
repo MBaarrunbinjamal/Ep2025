@@ -8,8 +8,9 @@ namespace E_project2025.Models
 
         [Required]
         public string Title { get; set; }
-
-        public DateTime  UploadedOn { get; set; }
+        public string Role { get; set; }
+        public string status { get; set; } = "on going";
+        public DateTime  UploadedOn { get; set; }=DateTime.Now;
         public DateTime ExpiryDate { get; set; }
 
         public ICollection<Question> Questions { get; set; }

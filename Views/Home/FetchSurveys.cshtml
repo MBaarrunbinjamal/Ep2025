@@ -17,22 +17,35 @@
         </tr>
     </thead>
     <tbody>
-        @foreach (var item in Model)
-        {
+       
+                  @foreach (var item in Model)
+        {                bool isExpired = @item.ExpiryDate < DateTime.Now;
+
             <tr>
                 <td>@item.Id</td>
                 <td>@item.Title</td>
                 <td>@item.UploadedOn.ToString("dd-MM-yyyy")</td>
                 <td>@item.ExpiryDate.ToString("dd-MM-yyyy")</td>
                 <td>
-                    <a asp-controller="Home"
+                    @if (isExpired)
+                    {
+                        <button class="btn btn-gray" disabled>
+                    Expired
+                </button>
+                    }
+                    else
+                    {
+                       <a asp-controller="Home"
                        asp-action="FetchQuestions"
                        asp-route-surveyId="@item.Id"
                        class="btn btn-primary btn-sm">
                         Answer Questions
-                    </a>
+                    </a>  
+                    }
+                   
                 </td>
             </tr>
         }
+        
     </tbody>
 </table>

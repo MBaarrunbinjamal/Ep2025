@@ -1,6 +1,7 @@
 using System.Diagnostics;
 using E_project2025.Data;
 using E_project2025.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace E_project2025.Controllers
@@ -30,7 +31,13 @@ namespace E_project2025.Controllers
         }
         public IActionResult FetchSurveys()
         {
-            var surveys =  dbcontext.Survays.ToList();
+            var surveys = dbcontext.Survays
+         .Where(s =>
+             s.Role == "Everyone" ||
+             s.Role == "User" 
+         )
+         .ToList();
+
 
             return View(surveys);
         }

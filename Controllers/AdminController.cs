@@ -82,17 +82,15 @@ namespace E_project2025.Controllers
 
             return Json(new { message = "User has been approved successfully!" });
         }
-        [Authorize(Roles = "Admin")]
 
         public IActionResult uploadsurways() {
             return View();
         }
-        [Authorize(Roles = "Admin")]
 
         [HttpPost]
-        public IActionResult createsurvay(string title, DateTime uploadedon, DateTime expiry)
+        public IActionResult createsurvay(string title,  DateTime expiry , string Role)
         {
-            if(title == null || uploadedon == null || expiry == null)
+            if(title == null ||  expiry == null)
             {
                 return Json(new { error = "All fields should be filled" }); 
             }
@@ -100,8 +98,8 @@ namespace E_project2025.Controllers
             {
                 var obj = new Survay()
                 {
-                    Title=title,
-                    UploadedOn = uploadedon,
+                    Title = title,
+                    Role =Role,
                     ExpiryDate = expiry,
 
                 };

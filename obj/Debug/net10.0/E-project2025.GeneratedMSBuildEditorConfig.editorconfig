@@ -214,6 +214,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVXNlcnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Baarrun/Ep2025/Views/Faculty/FetchfacultyQuestions.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFjdWx0eVxGZXRjaGZhY3VsdHlRdWVzdGlvbnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Baarrun/Ep2025/Views/Faculty/FetchSurveys.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFjdWx0eVxGZXRjaFN1cnZleXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Baarrun/Ep2025/Views/Faculty/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFjdWx0eVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

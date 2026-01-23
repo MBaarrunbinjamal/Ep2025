@@ -1449,6 +1449,7 @@ wwwroot\lib\jquery\dist\jquery.slim.min.map
 wwwroot\lib\jquery\LICENSE.txt
 wwwroot\uploads\006c1cdc-e9d3-4c56-b6bf-705611fc8d4f.jpeg
 wwwroot\uploads\896475bd-7d23-4158-bc8d-c58f14824117.jpeg
+wwwroot\uploads\a4862438-37e1-4766-85e3-495666f79195.jpeg
 wwwroot\user\css\bootstrap.min.css
 wwwroot\user\css\style.css
 wwwroot\user\img\about.jpg

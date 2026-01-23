@@ -1,0 +1,51 @@
+﻿@model IEnumerable<E_project2025.Models.Survay>
+
+@{
+    ViewData["Title"] = "FetchSurveys";
+    Layout = "~/Views/Shared/FacultyLayout.cshtml";
+}
+
+
+<table class="table table-bordered table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Uploaded On</th>
+            <th>Expiry Date</th>
+            <th>Operations</th>
+        </tr>
+    </thead>
+    <tbody>
+       
+                  @foreach (var item in Model)
+        {
+                bool isExpired = @item.ExpiryDate < DateTime.Now;
+
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Title</td>
+                <td>@item.UploadedOn.ToString("dd-MM-yyyy")</td>
+                <td>@item.ExpiryDate.ToString("dd-MM-yyyy")</td>
+                <td>
+                    @if (isExpired)
+                    {
+                       <button class="btn btn-gray" disabled>
+                    Expired
+                </button>
+
+                    }
+                     else{
+                         <a asp-controller="Faculty"
+    asp-action="FetchfacultyQuestions"
+    asp-route-surveyId="@item.Id"
+    class="btn btn-primary btn-sm">
+     Answer Questions
+ </a>
+                     }
+                </td>
+            </tr>
+        }
+        
+    </tbody>
+</table>
