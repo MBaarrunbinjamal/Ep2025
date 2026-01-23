@@ -192,11 +192,11 @@ namespace E_project2025.Controllers
 
             var obj = new seminar
             {
-                title = title,
-                venue = venue,
+                Title = title,
+                Venue = venue,
                 UserId = Users,
-                description = description,
-                image = filename
+                Description = description,
+                ImageUrl = filename
             };
 
             dbcontext.seminar.Add(obj);

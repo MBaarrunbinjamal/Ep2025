@@ -6,12 +6,10 @@ namespace E_project2025.Models
     public class seminar
     {
         public int Id { get; set; }
-        public string title { get; set; }
-        public string description { get; set; }
-        public string image { get; set; }
-        public string venue { get; set; }
-        public string UserId { get; set; }
-        [ForeignKey("UserId")]
-        public virtual E_project2025User users { get; set; }
+        public string Title { get; set; }
+        public string Description { get; set; }
+        public string ImageUrl { get; set; }
+        public string Venue { get; set; }
+        public string UserId { get; set; } // Add this property to fix CS0117
     }
 }

@@ -31,26 +31,26 @@
                         <form id="seminarForm" asp-action="AddSeminar" enctype="multipart/form-data">
                             <div class="row">
                                 <div class="col-md-6 mb-4">
-                                    <label asp-for="Seminar.title" class="form-label fw-semibold">Seminar Title</label>
+                                    <label asp-for="Seminar.Title" class="form-label fw-semibold">Seminar Title</label>
                                     <div class="input-group">
                                         <span class="input-group-text bg-light"><i class="fa fa-font text-primary"></i></span>
-                                        <input asp-for="Seminar.title" class="form-control" placeholder="Enter title" required id="title" />
+                                        <input asp-for="Seminar.Title" class="form-control" placeholder="Enter title" required id="title" />
                                     </div>
                                 </div>
 
                                 <div class="col-md-6 mb-4">
-                                    <label asp-for="Seminar.venue" class="form-label fw-semibold">Venue / Location</label>
+                                    <label asp-for="Seminar.Venue" class="form-label fw-semibold">Venue / Location</label>
                                     <div class="input-group">
                                         <span class="input-group-text bg-light"><i class="fa fa-map-marker text-danger"></i></span>
-                                        <input asp-for="Seminar.venue" class="form-control" placeholder="Enter venue" id="venue" required />
+                                        <input asp-for="Seminar.Venue" class="form-control" placeholder="Enter venue" id="venue" required />
                                     </div>
                                 </div>
 
                                 <div class="col-md-6 mb-4">
-                                    <label asp-for="Seminar.image" class="form-label fw-semibold">Image URL</label>
+                                    <label asp-for="Seminar.ImageUrl" class="form-label fw-semibold">Image URL</label>
                                     <div class="input-group">
                                         <span class="input-group-text bg-light"><i class="fa fa-image text-info"></i></span>
-                                        <input asp-for="Seminar.image" type="file" class="form-control" id="file"  />
+                                        <input asp-for="Seminar.ImageUrl" type="file" class="form-control" id="file" />
                                     </div>
                                 </div>
 
@@ -69,8 +69,8 @@
                                 </div>
 
                                 <div class="col-12 mb-4">
-                                    <label asp-for="Seminar.description" class="form-label fw-semibold">Seminar Description</label>
-                                    <textarea asp-for="Seminar.description" class="form-control" rows="4" placeholder="Briefly describe the seminar..." id="description"></textarea>
+                                    <label asp-for="Seminar.Description" class="form-label fw-semibold">Seminar Description</label>
+                                    <textarea asp-for="Seminar.Description" class="form-control" rows="4" placeholder="Briefly describe the seminar..." id="description"></textarea>
                                 </div>
                             </div>
 
