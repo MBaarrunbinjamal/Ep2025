@@ -3,6 +3,26 @@
   "WorkspaceRootPath": "D:\\Baarrun\\Ep2025\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|d:\\baarrun\\ep2025\\models\\seminar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:models\\seminar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|d:\\baarrun\\ep2025\\models\\seminarviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:models\\seminarviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|d:\\baarrun\\ep2025\\areas\\identity\\data\\e_project2025context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:areas\\identity\\data\\e_project2025context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|d:\\baarrun\\ep2025\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|d:\\baarrun\\ep2025\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|d:\\baarrun\\ep2025\\views\\faculty\\fetchsurveys.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:views\\faculty\\fetchsurveys.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -17,10 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|d:\\baarrun\\ep2025\\views\\faculty\\fetchfacultyquestions.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:views\\faculty\\fetchfacultyquestions.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|d:\\baarrun\\ep2025\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|d:\\baarrun\\ep2025\\views\\home\\fetchquestions.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -43,28 +59,8 @@
       "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:views\\admin\\addseminar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|d:\\baarrun\\ep2025\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|d:\\baarrun\\ep2025\\models\\answers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:models\\answers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Baarrun\\Ep2025\\Migrations\\20260123183505_hammer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20260123183505_hammer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Baarrun\\Ep2025\\Migrations\\20260123182510_fuck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20260123182510_fuck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|d:\\baarrun\\ep2025\\models\\seminar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:models\\seminar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|d:\\baarrun\\ep2025\\models\\seminarviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:models\\seminarviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|d:\\baarrun\\ep2025\\views\\shared\\adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -79,15 +75,19 @@
       "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:areas\\identity\\data\\e_project2025user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|d:\\baarrun\\ep2025\\areas\\identity\\data\\e_project2025context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:areas\\identity\\data\\e_project2025context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\Desktop\\Baarun\\12th Jan Answers Waala Kaam\\Ep2025\\Migrations\\20260119090706_upd3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|d:\\baarrun\\ep2025\\migrations\\20260123102028_mutant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:migrations\\20260123102028_mutant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|d:\\baarrun\\ep2025\\migrations\\20260123183505_hammer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:migrations\\20260123183505_hammer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|d:\\baarrun\\ep2025\\migrations\\20260123182510_fuck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:migrations\\20260123182510_fuck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -97,205 +97,49 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FetchSurveys.cshtml",
-              "DocumentMoniker": "D:\\Baarrun\\Ep2025\\Views\\Home\\FetchSurveys.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\FetchSurveys.cshtml",
-              "ToolTip": "D:\\Baarrun\\Ep2025\\Views\\Home\\FetchSurveys.cshtml",
-              "RelativeToolTip": "Views\\Home\\FetchSurveys.cshtml",
-              "ViewState": "AgIAABkAAAAAAAAAAAAAAB8AAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-23T19:42:03.157Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "FetchfacultyQuestions.cshtml",
-              "DocumentMoniker": "D:\\Baarrun\\Ep2025\\Views\\Faculty\\FetchfacultyQuestions.cshtml",
-              "RelativeDocumentMoniker": "Views\\Faculty\\FetchfacultyQuestions.cshtml",
-              "ToolTip": "D:\\Baarrun\\Ep2025\\Views\\Faculty\\FetchfacultyQuestions.cshtml",
-              "RelativeToolTip": "Views\\Faculty\\FetchfacultyQuestions.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-23T19:34:23.341Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FetchSurveys.cshtml",
-              "DocumentMoniker": "D:\\Baarrun\\Ep2025\\Views\\Faculty\\FetchSurveys.cshtml",
-              "RelativeDocumentMoniker": "Views\\Faculty\\FetchSurveys.cshtml",
-              "ToolTip": "D:\\Baarrun\\Ep2025\\Views\\Faculty\\FetchSurveys.cshtml",
-              "RelativeToolTip": "Views\\Faculty\\FetchSurveys.cshtml",
-              "ViewState": "AgIAABEAAAAAAAAAAAAYwCAAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-23T19:30:14.436Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FacultyController.cs",
-              "DocumentMoniker": "D:\\Baarrun\\Ep2025\\Controllers\\FacultyController.cs",
-              "RelativeDocumentMoniker": "Controllers\\FacultyController.cs",
-              "ToolTip": "D:\\Baarrun\\Ep2025\\Controllers\\FacultyController.cs",
-              "RelativeToolTip": "Controllers\\FacultyController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAuwCEAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-23T19:27:16.992Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "HomeController.cs",
               "DocumentMoniker": "D:\\Baarrun\\Ep2025\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
               "ToolTip": "D:\\Baarrun\\Ep2025\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAuwDIAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAuwAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-22T08:53:02.757Z",
+              "WhenOpened": "2026-01-23T20:10:24.5Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FetchQuestions.cshtml",
-              "DocumentMoniker": "D:\\Baarrun\\Ep2025\\Views\\Home\\FetchQuestions.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\FetchQuestions.cshtml",
-              "ToolTip": "D:\\Baarrun\\Ep2025\\Views\\Home\\FetchQuestions.cshtml",
-              "RelativeToolTip": "Views\\Home\\FetchQuestions.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-22T08:53:02.834Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AdminController.cs",
-              "DocumentMoniker": "D:\\Baarrun\\Ep2025\\Controllers\\AdminController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
-              "ToolTip": "D:\\Baarrun\\Ep2025\\Controllers\\AdminController.cs",
-              "RelativeToolTip": "Controllers\\AdminController.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAQwH4AAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-22T08:53:02.722Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Survay.cs",
-              "DocumentMoniker": "D:\\Baarrun\\Ep2025\\Models\\Survay.cs",
-              "RelativeDocumentMoniker": "Models\\Survay.cs",
-              "ToolTip": "D:\\Baarrun\\Ep2025\\Models\\Survay.cs",
-              "RelativeToolTip": "Models\\Survay.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAowA0AAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-23T18:12:21.716Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "uploadsurways.cshtml",
-              "DocumentMoniker": "D:\\Baarrun\\Ep2025\\Views\\Admin\\uploadsurways.cshtml",
-              "RelativeDocumentMoniker": "Views\\Admin\\uploadsurways.cshtml",
-              "ToolTip": "D:\\Baarrun\\Ep2025\\Views\\Admin\\uploadsurways.cshtml",
-              "RelativeToolTip": "Views\\Admin\\uploadsurways.cshtml",
-              "ViewState": "AgIAAHYAAAAAAAAAAAAYwIQAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-23T18:37:07.743Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "20260123183505_hammer.cs",
-              "DocumentMoniker": "D:\\Baarrun\\Ep2025\\Migrations\\20260123183505_hammer.cs",
-              "RelativeDocumentMoniker": "Migrations\\20260123183505_hammer.cs",
-              "ToolTip": "D:\\Baarrun\\Ep2025\\Migrations\\20260123183505_hammer.cs",
-              "RelativeToolTip": "Migrations\\20260123183505_hammer.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-23T18:35:05.932Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "addseminar.cshtml",
-              "DocumentMoniker": "D:\\Baarrun\\Ep2025\\Views\\Admin\\addseminar.cshtml",
-              "RelativeDocumentMoniker": "Views\\Admin\\addseminar.cshtml",
-              "ToolTip": "D:\\Baarrun\\Ep2025\\Views\\Admin\\addseminar.cshtml",
-              "RelativeToolTip": "Views\\Admin\\addseminar.cshtml",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAkwEAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-22T08:53:02.642Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Answers.cs",
-              "DocumentMoniker": "D:\\Baarrun\\Ep2025\\Models\\Answers.cs",
-              "RelativeDocumentMoniker": "Models\\Answers.cs",
-              "ToolTip": "D:\\Baarrun\\Ep2025\\Models\\Answers.cs",
-              "RelativeToolTip": "Models\\Answers.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBEAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-22T08:53:02.749Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "20260123182510_fuck.cs",
-              "DocumentMoniker": "D:\\Baarrun\\Ep2025\\Migrations\\20260123182510_fuck.cs",
-              "RelativeDocumentMoniker": "Migrations\\20260123182510_fuck.cs",
-              "ToolTip": "D:\\Baarrun\\Ep2025\\Migrations\\20260123182510_fuck.cs",
-              "RelativeToolTip": "Migrations\\20260123182510_fuck.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-23T18:25:10.79Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 4,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\Baarrun\\Ep2025\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
               "ToolTip": "D:\\Baarrun\\Ep2025\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAACWAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-01-22T08:53:02.736Z",
+              "WhenOpened": "2026-01-23T20:10:24.563Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "E_project2025Context.cs",
+              "DocumentMoniker": "D:\\Baarrun\\Ep2025\\Areas\\Identity\\Data\\E_project2025Context.cs",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Data\\E_project2025Context.cs",
+              "ToolTip": "D:\\Baarrun\\Ep2025\\Areas\\Identity\\Data\\E_project2025Context.cs",
+              "RelativeToolTip": "Areas\\Identity\\Data\\E_project2025Context.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAA0wBMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-23T20:10:24.613Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "seminar.cs",
-              "DocumentMoniker": "D:\\Baarrun\\Ep2025\\Models\\seminar.cs",
-              "RelativeDocumentMoniker": "Models\\seminar.cs",
-              "ToolTip": "D:\\Baarrun\\Ep2025\\Models\\seminar.cs",
-              "RelativeToolTip": "Models\\seminar.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAqwAwAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-22T08:53:02.716Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 1,
               "Title": "SeminarViewModel.cs",
               "DocumentMoniker": "D:\\Baarrun\\Ep2025\\Models\\SeminarViewModel.cs",
               "RelativeDocumentMoniker": "Models\\SeminarViewModel.cs",
@@ -303,11 +147,169 @@
               "RelativeToolTip": "Models\\SeminarViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-22T08:53:02.449Z"
+              "WhenOpened": "2026-01-23T20:10:24.577Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 0,
+              "Title": "seminar.cs",
+              "DocumentMoniker": "D:\\Baarrun\\Ep2025\\Models\\seminar.cs",
+              "RelativeDocumentMoniker": "Models\\seminar.cs",
+              "ToolTip": "D:\\Baarrun\\Ep2025\\Models\\seminar.cs",
+              "RelativeToolTip": "Models\\seminar.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAqwAwAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-23T20:10:24.563Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FacultyController.cs",
+              "DocumentMoniker": "D:\\Baarrun\\Ep2025\\Controllers\\FacultyController.cs",
+              "RelativeDocumentMoniker": "Controllers\\FacultyController.cs",
+              "ToolTip": "D:\\Baarrun\\Ep2025\\Controllers\\FacultyController.cs",
+              "RelativeToolTip": "Controllers\\FacultyController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAuwCEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-23T20:10:24.496Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FetchSurveys.cshtml",
+              "DocumentMoniker": "D:\\Baarrun\\Ep2025\\Views\\Faculty\\FetchSurveys.cshtml",
+              "RelativeDocumentMoniker": "Views\\Faculty\\FetchSurveys.cshtml",
+              "ToolTip": "D:\\Baarrun\\Ep2025\\Views\\Faculty\\FetchSurveys.cshtml",
+              "RelativeToolTip": "Views\\Faculty\\FetchSurveys.cshtml",
+              "ViewState": "AgIAABEAAAAAAAAAAAAYwBwAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-23T20:10:24.467Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FetchfacultyQuestions.cshtml",
+              "DocumentMoniker": "D:\\Baarrun\\Ep2025\\Views\\Faculty\\FetchfacultyQuestions.cshtml",
+              "RelativeDocumentMoniker": "Views\\Faculty\\FetchfacultyQuestions.cshtml",
+              "ToolTip": "D:\\Baarrun\\Ep2025\\Views\\Faculty\\FetchfacultyQuestions.cshtml",
+              "RelativeToolTip": "Views\\Faculty\\FetchfacultyQuestions.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-23T20:10:24.462Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FetchSurveys.cshtml",
+              "DocumentMoniker": "D:\\Baarrun\\Ep2025\\Views\\Home\\FetchSurveys.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\FetchSurveys.cshtml",
+              "ToolTip": "D:\\Baarrun\\Ep2025\\Views\\Home\\FetchSurveys.cshtml",
+              "RelativeToolTip": "Views\\Home\\FetchSurveys.cshtml",
+              "ViewState": "AgIAABkAAAAAAAAAAAAAAB8AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-23T20:10:24.343Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FetchQuestions.cshtml",
+              "DocumentMoniker": "D:\\Baarrun\\Ep2025\\Views\\Home\\FetchQuestions.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\FetchQuestions.cshtml",
+              "ToolTip": "D:\\Baarrun\\Ep2025\\Views\\Home\\FetchQuestions.cshtml",
+              "RelativeToolTip": "Views\\Home\\FetchQuestions.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-23T20:10:24.505Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "D:\\Baarrun\\Ep2025\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
+              "ToolTip": "D:\\Baarrun\\Ep2025\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Controllers\\AdminController.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAQwH4AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-23T20:10:24.51Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Survay.cs",
+              "DocumentMoniker": "D:\\Baarrun\\Ep2025\\Models\\Survay.cs",
+              "RelativeDocumentMoniker": "Models\\Survay.cs",
+              "ToolTip": "D:\\Baarrun\\Ep2025\\Models\\Survay.cs",
+              "RelativeToolTip": "Models\\Survay.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAowA0AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-23T20:10:24.515Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "uploadsurways.cshtml",
+              "DocumentMoniker": "D:\\Baarrun\\Ep2025\\Views\\Admin\\uploadsurways.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\uploadsurways.cshtml",
+              "ToolTip": "D:\\Baarrun\\Ep2025\\Views\\Admin\\uploadsurways.cshtml",
+              "RelativeToolTip": "Views\\Admin\\uploadsurways.cshtml",
+              "ViewState": "AgIAAHYAAAAAAAAAAAAYwIQAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-23T20:10:24.52Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "20260123183505_hammer.cs",
+              "DocumentMoniker": "D:\\Baarrun\\Ep2025\\Migrations\\20260123183505_hammer.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260123183505_hammer.cs",
+              "ToolTip": "D:\\Baarrun\\Ep2025\\Migrations\\20260123183505_hammer.cs",
+              "RelativeToolTip": "Migrations\\20260123183505_hammer.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-23T20:10:24.544Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "addseminar.cshtml",
+              "DocumentMoniker": "D:\\Baarrun\\Ep2025\\Views\\Admin\\addseminar.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\addseminar.cshtml",
+              "ToolTip": "D:\\Baarrun\\Ep2025\\Views\\Admin\\addseminar.cshtml",
+              "RelativeToolTip": "Views\\Admin\\addseminar.cshtml",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAkwEAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-23T20:10:24.547Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Answers.cs",
+              "DocumentMoniker": "D:\\Baarrun\\Ep2025\\Models\\Answers.cs",
+              "RelativeDocumentMoniker": "Models\\Answers.cs",
+              "ToolTip": "D:\\Baarrun\\Ep2025\\Models\\Answers.cs",
+              "RelativeToolTip": "Models\\Answers.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBEAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-23T20:10:24.547Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "20260123182510_fuck.cs",
+              "DocumentMoniker": "D:\\Baarrun\\Ep2025\\Migrations\\20260123182510_fuck.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260123182510_fuck.cs",
+              "ToolTip": "D:\\Baarrun\\Ep2025\\Migrations\\20260123182510_fuck.cs",
+              "RelativeToolTip": "Migrations\\20260123182510_fuck.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-23T20:10:24.547Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "AdminLayout.cshtml",
               "DocumentMoniker": "D:\\Baarrun\\Ep2025\\Views\\Shared\\AdminLayout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\AdminLayout.cshtml",
@@ -315,11 +317,11 @@
               "RelativeToolTip": "Views\\Shared\\AdminLayout.cshtml",
               "ViewState": "AgIAAEUAAAAAAAAAAAAUwFMAAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-22T09:16:32.463Z"
+              "WhenOpened": "2026-01-23T20:10:24.586Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 19,
               "Title": "20260123102028_mutant.cs",
               "DocumentMoniker": "D:\\Baarrun\\Ep2025\\Migrations\\20260123102028_mutant.cs",
               "RelativeDocumentMoniker": "Migrations\\20260123102028_mutant.cs",
@@ -327,11 +329,11 @@
               "RelativeToolTip": "Migrations\\20260123102028_mutant.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-23T10:20:29.621Z"
+              "WhenOpened": "2026-01-23T20:10:24.593Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 16,
               "Title": "fetchanswers.cshtml",
               "DocumentMoniker": "D:\\Baarrun\\Ep2025\\Views\\Admin\\fetchanswers.cshtml",
               "RelativeDocumentMoniker": "Views\\Admin\\fetchanswers.cshtml",
@@ -339,11 +341,11 @@
               "RelativeToolTip": "Views\\Admin\\fetchanswers.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-23T11:11:26.875Z"
+              "WhenOpened": "2026-01-23T20:10:24.6Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 17,
               "Title": "E_project2025User.cs",
               "DocumentMoniker": "D:\\Baarrun\\Ep2025\\Areas\\Identity\\Data\\E_project2025User.cs",
               "RelativeDocumentMoniker": "Areas\\Identity\\Data\\E_project2025User.cs",
@@ -351,28 +353,16 @@
               "RelativeToolTip": "Areas\\Identity\\Data\\E_project2025User.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAQwAoAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-22T08:53:02.823Z"
+              "WhenOpened": "2026-01-23T20:10:24.606Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "E_project2025Context.cs",
-              "DocumentMoniker": "D:\\Baarrun\\Ep2025\\Areas\\Identity\\Data\\E_project2025Context.cs",
-              "RelativeDocumentMoniker": "Areas\\Identity\\Data\\E_project2025Context.cs",
-              "ToolTip": "D:\\Baarrun\\Ep2025\\Areas\\Identity\\Data\\E_project2025Context.cs",
-              "RelativeToolTip": "Areas\\Identity\\Data\\E_project2025Context.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAA5wBMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-22T08:53:02.744Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 18,
               "Title": "20260119090706_upd3.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Baarun\\12th Jan Answers Waala Kaam\\Ep2025\\Migrations\\20260119090706_upd3.cs",
               "ToolTip": "C:\\Users\\Admin\\Desktop\\Baarun\\12th Jan Answers Waala Kaam\\Ep2025\\Migrations\\20260119090706_upd3.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-22T08:53:02.817Z"
+              "WhenOpened": "2026-01-23T20:10:24.634Z"
             }
           ]
         }

@@ -8,16 +8,21 @@ namespace E_project2025.Data;
 
 public class E_project2025Context : IdentityDbContext<E_project2025User>
 {
+    internal object seminars;
+
     public E_project2025Context(DbContextOptions<E_project2025Context> options)
         : base(options)
     {
     }
     public DbSet<Survay> Survays { get; set; }
     public DbSet<Question> Questions { get; set; }
-    public DbSet<seminar> seminar { get; set; }
+  
     public DbSet<Answers> Answers { get; set; }
 
- 
+
+    public DbSet<seminar> seminar { get; set; }
+    public DbSet<SeminarRegistration> SeminarRegistrations { get; set; }
+
 
 
     protected override void OnModelCreating(ModelBuilder builder)

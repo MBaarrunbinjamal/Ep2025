@@ -1,8 +1,9 @@
-using System.Diagnostics;
 using E_project2025.Data;
 using E_project2025.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System.Diagnostics;
 
 namespace E_project2025.Controllers
 {
@@ -70,6 +71,42 @@ namespace E_project2025.Controllers
 
             return RedirectToAction("FetchSurveys");
         }
+        [Route("Home/seminars")]
+      
+        public IActionResult Seminar()
+        {
+            var seminars = dbcontext.seminar.ToList();
+            return View("seminars", seminars);
+        }
+
+        [HttpPost]
+        public IActionResult RegisterSeminar(int seminarId)
+        {
+            var userId = User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value;
+
+            if (userId == null)
+                return Json("login-required");
+
+            var alreadyRegistered = dbcontext.SeminarRegistrations
+                .Any(x => x.SeminarId == seminarId && x.UserId == userId);
+
+            if (!alreadyRegistered)
+            {
+                SeminarRegistration reg = new SeminarRegistration
+                {
+                    SeminarId = seminarId,
+                    UserId = userId,
+                    RegisteredOn = DateTime.Now
+                };
+
+                dbcontext.SeminarRegistrations.Add(reg);
+                dbcontext.SaveChanges();
+            }
+
+            return Json("success");
+        }
+
+
 
     }
 
