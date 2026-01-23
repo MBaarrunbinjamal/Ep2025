@@ -28,13 +28,13 @@
                         <h5 class="card-title mb-0 fw-bold text-primary">Seminar Information</h5>
                     </div>
                     <div class="card-body p-4">
-                        <form id="seminarForm" asp-action="AddSeminar">
+                        <form id="seminarForm" asp-action="AddSeminar" enctype="multipart/form-data">
                             <div class="row">
                                 <div class="col-md-6 mb-4">
                                     <label asp-for="Seminar.title" class="form-label fw-semibold">Seminar Title</label>
                                     <div class="input-group">
                                         <span class="input-group-text bg-light"><i class="fa fa-font text-primary"></i></span>
-                                        <input asp-for="Seminar.title" class="form-control" placeholder="Enter title" required />
+                                        <input asp-for="Seminar.title" class="form-control" placeholder="Enter title" required id="title" />
                                     </div>
                                 </div>
 
@@ -42,7 +42,7 @@
                                     <label asp-for="Seminar.venue" class="form-label fw-semibold">Venue / Location</label>
                                     <div class="input-group">
                                         <span class="input-group-text bg-light"><i class="fa fa-map-marker text-danger"></i></span>
-                                        <input asp-for="Seminar.venue" class="form-control" placeholder="Enter venue" required />
+                                        <input asp-for="Seminar.venue" class="form-control" placeholder="Enter venue" id="venue" required />
                                     </div>
                                 </div>
 
@@ -50,7 +50,7 @@
                                     <label asp-for="Seminar.image" class="form-label fw-semibold">Image URL</label>
                                     <div class="input-group">
                                         <span class="input-group-text bg-light"><i class="fa fa-image text-info"></i></span>
-                                        <input asp-for="Seminar.image" class="form-control" placeholder="https://example.com/image.jpg" />
+                                        <input asp-for="Seminar.image" type="file" class="form-control" id="file"  />
                                     </div>
                                 </div>
 
@@ -58,17 +58,19 @@
                                     <label class="form-label fw-semibold">Assign to User/Faculty</label>
                                     <div class="input-group">
                                         <span class="input-group-text bg-light"><i class="fa fa-user text-warning"></i></span>
-                                        <select asp-for="Seminar.UserId"
-                                                class="form-select border-start-0"
-                                                asp-items="@(new SelectList(Model.Users, "Id", "UserName"))">
-                                            <option value="">-- Select User --</option>
-                                        </select>
+                                       <select asp-for="Seminar.UserId"
+        asp-items="@(new SelectList(Model.Users, "Id", "FirstName"))"
+        class="form-select"
+        id="Users">
+    <option value="">-- Select User --</option>
+</select>
+
                                     </div>
                                 </div>
 
                                 <div class="col-12 mb-4">
                                     <label asp-for="Seminar.description" class="form-label fw-semibold">Seminar Description</label>
-                                    <textarea asp-for="Seminar.description" class="form-control" rows="4" placeholder="Briefly describe the seminar..."></textarea>
+                                    <textarea asp-for="Seminar.description" class="form-control" rows="4" placeholder="Briefly describe the seminar..." id="description"></textarea>
                                 </div>
                             </div>
 
@@ -99,44 +101,36 @@
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 <script>
-    $(document).ready(function() {
-        $("#submitBtn").click(function () {
-            var form = $("#seminarForm");
-            var btn = $(this);
+    $("#submitBtn").click(function () {
 
-            // Basic Validation Check
-            if(!form[0].checkValidity()){
-                form[0].reportValidity();
-                return;
+        var formData = new FormData();
+        formData.append("title", $("#title").val());
+        formData.append("venue", $("#venue").val());
+        formData.append("file", $("#file")[0].files[0]); 
+        formData.append("Users", $("#Users").val());
+        formData.append("description", $("#description").val());
+
+        $.ajax({
+            url: '/Admin/AddSeminar',
+            type: 'POST',
+            data: formData,
+            processData: false, 
+            contentType: false, 
+            success: function (response) {
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Success',
+                    text: response.success
+                });
+                $("#seminarForm")[0].reset();
+            },
+            error: function () {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Server Error',
+                    text: 'Something went wrong!'
+                });
             }
-
-            // Loading state
-            btn.prop('disabled', true).html('<span class="spinner-border spinner-border-sm me-2"></span>Creating...');
-
-            $.ajax({
-                url: form.attr("action"),
-                type: "POST",
-                data: form.serialize(),
-                success: function (response) {
-                    Swal.fire({
-                        icon: 'success',
-                        title: 'Success!',
-                        text: 'Seminar added successfully',
-                        confirmButtonColor: '#5d87ff'
-                    });
-                    form[0].reset();
-                },
-                error: function () {
-                    Swal.fire({
-                        icon: 'error',
-                        title: 'Error!',
-                        text: 'Something went wrong on the server',
-                    });
-                },
-                complete: function() {
-                    btn.prop('disabled', false).html('<i class="fa fa-plus-circle me-2"></i> Create Seminar');
-                }
-            });
         });
     });
 </script>

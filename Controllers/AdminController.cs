@@ -163,19 +163,48 @@ namespace E_project2025.Controllers
 
             return View(vm);
         }
-        [HttpPost]
-        public async Task<IActionResult> AddSeminar(SeminarViewModel model)
-        {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest();
-            } 
 
-            dbcontext.seminar.Add(model.Seminar);
+        [HttpPost]
+        public async Task<IActionResult> AddSeminar(
+      string title,
+      string venue,
+      IFormFile file,
+      string Users,
+      string description)
+        {
+            string filename = null;
+
+            if (file != null && file.Length > 0)
+            {
+                string uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads");
+
+                if (!Directory.Exists(uploadsFolder))
+                    Directory.CreateDirectory(uploadsFolder);
+
+                filename = Guid.NewGuid() + Path.GetExtension(file.FileName);
+                string filePath = Path.Combine(uploadsFolder, filename);
+
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    await file.CopyToAsync(stream);
+                }
+            }
+
+            var obj = new seminar
+            {
+                title = title,
+                venue = venue,
+                UserId = Users,
+                description = description,
+                image = filename
+            };
+
+            dbcontext.seminar.Add(obj);
             await dbcontext.SaveChangesAsync();
 
-            return Ok();
+            return Json(new { success = "Seminar submitted successfully!" });
         }
+
 
         [Authorize]
         public IActionResult MyAnswers()
