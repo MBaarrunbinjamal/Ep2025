@@ -12,11 +12,13 @@ public class E_project2025Context : IdentityDbContext<E_project2025User>
         : base(options)
     {
     }
+
     public DbSet<Survay> Survays { get; set; }
     public DbSet<Question> Questions { get; set; }
-
     public DbSet<Answers> Answers { get; set; }
 
+    // ✅ Add ContactModel DbSet here
+    public DbSet<ContactModel> ContactModels { get; set; }
 
     protected override void OnModelCreating(ModelBuilder builder)
     {
@@ -41,6 +43,7 @@ public class E_project2025Context : IdentityDbContext<E_project2025User>
             .WithMany()
             .HasForeignKey(a => a.UserId)
             .OnDelete(DeleteBehavior.Restrict);
+
         // Customize the ASP.NET Identity model and override the defaults if needed.
         // For example, you can rename the ASP.NET Identity table names and more.
         // Add your customizations after calling base.OnModelCreating(builder);

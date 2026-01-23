@@ -137,6 +137,31 @@ namespace E_project2025.Migrations
                     b.ToTable("Answers");
                 });
 
+            modelBuilder.Entity("E_project2025.Models.ContactModel", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Message")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ContactModels");
+                });
+
             modelBuilder.Entity("E_project2025.Models.Question", b =>
                 {
                     b.Property<int>("Id")
