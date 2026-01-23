@@ -1,5 +1,6 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\Ep2025\\",
   "Documents": [
     {
@@ -80,6 +81,45 @@
     {
       "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|c:\\users\\admin\\desktop\\ep2025\\migrations\\20260120184913_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:migrations\\20260120184913_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+  "WorkspaceRootPath": "C:\\Users\\us\\source\\repos\\Ep2025\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|c:\\users\\us\\source\\repos\\ep2025\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|c:\\users\\us\\source\\repos\\ep2025\\views\\home\\seminars.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:views\\home\\seminars.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\us\\source\\repos\\Ep2025\\Migrations\\20260123181219_bismillah.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20260123181219_bismillah.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|c:\\users\\us\\source\\repos\\ep2025\\views\\admin\\addseminar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:views\\admin\\addseminar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|c:\\users\\us\\source\\repos\\ep2025\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|c:\\users\\us\\source\\repos\\ep2025\\areas\\identity\\data\\e_project2025context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:areas\\identity\\data\\e_project2025context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|c:\\users\\us\\source\\repos\\ep2025\\models\\seminarregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:models\\seminarregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|c:\\users\\us\\source\\repos\\ep2025\\models\\seminar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:models\\seminar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|c:\\users\\us\\source\\repos\\ep2025\\models\\seminarviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:models\\seminarviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> bd9066fd25afaa6bcccdc7b5e5bcc5c465bd5f3b
     }
   ],
   "DocumentGroupContainers": [
@@ -89,6 +129,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 5,
           "Children": [
             {
@@ -147,10 +188,18 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-01-20T05:59:27.241Z",
               "EditorCaption": ""
+=======
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+>>>>>>> bd9066fd25afaa6bcccdc7b5e5bcc5c465bd5f3b
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+<<<<<<< HEAD
               "Title": "20260120192822_AddContactTable2.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Ep2025\\Migrations\\20260120192822_AddContactTable2.cs",
               "RelativeDocumentMoniker": "Migrations\\20260120192822_AddContactTable2.cs",
@@ -171,10 +220,48 @@
               "ViewState": "AgIAAAoAAAAAAAAAAAAiwCQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-01-20T18:43:46.638Z"
+=======
+              "Title": "20260123181219_bismillah.cs",
+              "DocumentMoniker": "C:\\Users\\us\\source\\repos\\Ep2025\\Migrations\\20260123181219_bismillah.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260123181219_bismillah.cs",
+              "ToolTip": "C:\\Users\\us\\source\\repos\\Ep2025\\Migrations\\20260123181219_bismillah.cs",
+              "RelativeToolTip": "Migrations\\20260123181219_bismillah.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-23T18:12:19.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "addseminar.cshtml",
+              "DocumentMoniker": "C:\\Users\\us\\source\\repos\\Ep2025\\Views\\Admin\\addseminar.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\addseminar.cshtml",
+              "ToolTip": "C:\\Users\\us\\source\\repos\\Ep2025\\Views\\Admin\\addseminar.cshtml",
+              "RelativeToolTip": "Views\\Admin\\addseminar.cshtml",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAgwDUAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-23T18:06:45.788Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "E_project2025Context.cs",
+              "DocumentMoniker": "C:\\Users\\us\\source\\repos\\Ep2025\\Areas\\Identity\\Data\\E_project2025Context.cs",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Data\\E_project2025Context.cs",
+              "ToolTip": "C:\\Users\\us\\source\\repos\\Ep2025\\Areas\\Identity\\Data\\E_project2025Context.cs",
+              "RelativeToolTip": "Areas\\Identity\\Data\\E_project2025Context.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBcAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-23T17:58:44.511Z",
+              "EditorCaption": ""
+>>>>>>> bd9066fd25afaa6bcccdc7b5e5bcc5c465bd5f3b
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
+<<<<<<< HEAD
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Ep2025\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -207,10 +294,61 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-20T18:36:54.303Z"
+=======
+              "Title": "SeminarRegistration.cs",
+              "DocumentMoniker": "C:\\Users\\us\\source\\repos\\Ep2025\\Models\\SeminarRegistration.cs",
+              "RelativeDocumentMoniker": "Models\\SeminarRegistration.cs",
+              "ToolTip": "C:\\Users\\us\\source\\repos\\Ep2025\\Models\\SeminarRegistration.cs",
+              "RelativeToolTip": "Models\\SeminarRegistration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-23T17:58:23.117Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "seminars.cshtml",
+              "DocumentMoniker": "C:\\Users\\us\\source\\repos\\Ep2025\\Views\\Home\\seminars.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\seminars.cshtml",
+              "ToolTip": "C:\\Users\\us\\source\\repos\\Ep2025\\Views\\Home\\seminars.cshtml",
+              "RelativeToolTip": "Views\\Home\\seminars.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAACIAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-23T15:21:14.82Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "seminar.cs",
+              "DocumentMoniker": "C:\\Users\\us\\source\\repos\\Ep2025\\Models\\seminar.cs",
+              "RelativeDocumentMoniker": "Models\\seminar.cs",
+              "ToolTip": "C:\\Users\\us\\source\\repos\\Ep2025\\Models\\seminar.cs",
+              "RelativeToolTip": "Models\\seminar.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAswA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T08:53:02.716Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\us\\source\\repos\\Ep2025\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\us\\source\\repos\\Ep2025\\Controllers\\HomeController.cs*",
+              "RelativeToolTip": "Controllers\\HomeController.cs*",
+              "ViewState": "AgIAADQAAAAAAAAAAADwv0MAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T08:53:02.757Z",
+              "EditorCaption": ""
+>>>>>>> bd9066fd25afaa6bcccdc7b5e5bcc5c465bd5f3b
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
+<<<<<<< HEAD
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Ep2025\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
@@ -347,6 +485,38 @@
           "SelectedChildIndex": -1,
           "Children": [
             {
+=======
+              "Title": "SeminarViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\us\\source\\repos\\Ep2025\\Models\\SeminarViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\SeminarViewModel.cs",
+              "ToolTip": "C:\\Users\\us\\source\\repos\\Ep2025\\Models\\SeminarViewModel.cs",
+              "RelativeToolTip": "Models\\SeminarViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T08:53:02.449Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\us\\source\\repos\\Ep2025\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\us\\source\\repos\\Ep2025\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Controllers\\AdminController.cs",
+              "ViewState": "AgIAALgAAAAAAAAAAAASwMYAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T08:53:02.722Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 84,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+>>>>>>> bd9066fd25afaa6bcccdc7b5e5bcc5c465bd5f3b
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             }

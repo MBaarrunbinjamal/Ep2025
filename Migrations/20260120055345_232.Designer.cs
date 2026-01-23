@@ -12,15 +12,20 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace E_project2025.Migrations
 {
     [DbContext(typeof(E_project2025Context))]
+<<<<<<<< HEAD:Migrations/20260120055345_232.Designer.cs
     [Migration("20260120055345_232")]
     partial class _232
+========
+    [Migration("20260123181219_bismillah")]
+    partial class bismillah
+>>>>>>>> bd9066fd25afaa6bcccdc7b5e5bcc5c465bd5f3b:Migrations/20260123181219_bismillah.Designer.cs
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "10.0.1")
+                .HasAnnotation("ProductVersion", "10.0.2")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -171,6 +176,29 @@ namespace E_project2025.Migrations
                     b.ToTable("Questions");
                 });
 
+            modelBuilder.Entity("E_project2025.Models.SeminarRegistration", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("RegisteredOn")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("SeminarId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("SeminarRegistrations");
+                });
+
             modelBuilder.Entity("E_project2025.Models.Survay", b =>
                 {
                     b.Property<int>("Id")
@@ -192,6 +220,39 @@ namespace E_project2025.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Survays");
+                });
+
+            modelBuilder.Entity("E_project2025.Models.seminar", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImageUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Venue")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("seminar");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>

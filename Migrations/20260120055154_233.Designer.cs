@@ -12,15 +12,20 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace E_project2025.Migrations
 {
     [DbContext(typeof(E_project2025Context))]
+<<<<<<<< HEAD:Migrations/20260120055154_233.Designer.cs
     [Migration("20260120055154_233")]
     partial class _233
+========
+    [Migration("20260123145556_m555")]
+    partial class m555
+>>>>>>>> bd9066fd25afaa6bcccdc7b5e5bcc5c465bd5f3b:Migrations/20260123145556_m555.Designer.cs
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "10.0.1")
+                .HasAnnotation("ProductVersion", "10.0.2")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -192,6 +197,41 @@ namespace E_project2025.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Survays");
+                });
+
+            modelBuilder.Entity("E_project2025.Models.seminar", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("image")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("venue")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("seminar");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -369,6 +409,17 @@ namespace E_project2025.Migrations
                     b.Navigation("Survay");
 
                     b.Navigation("User");
+                });
+
+            modelBuilder.Entity("E_project2025.Models.seminar", b =>
+                {
+                    b.HasOne("E_project2025.Areas.Identity.Data.E_project2025User", "users")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("users");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

@@ -6,7 +6,11 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace E_project2025.Migrations
 {
     /// <inheritdoc />
+<<<<<<<< HEAD:Migrations/20260120055154_233.cs
     public partial class _233 : Migration
+========
+    public partial class mutant : Migration
+>>>>>>>> bd9066fd25afaa6bcccdc7b5e5bcc5c465bd5f3b:Migrations/20260123102028_mutant.cs
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -177,6 +181,29 @@ namespace E_project2025.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "seminar",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    title = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    description = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    image = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    venue = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    UserId = table.Column<string>(type: "nvarchar(450)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_seminar", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_seminar_AspNetUsers_UserId",
+                        column: x => x.UserId,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Questions",
                 columns: table => new
                 {
@@ -300,6 +327,11 @@ namespace E_project2025.Migrations
                 name: "IX_Questions_UserId",
                 table: "Questions",
                 column: "UserId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_seminar_UserId",
+                table: "seminar",
+                column: "UserId");
         }
 
         /// <inheritdoc />
@@ -322,6 +354,9 @@ namespace E_project2025.Migrations
 
             migrationBuilder.DropTable(
                 name: "AspNetUserTokens");
+
+            migrationBuilder.DropTable(
+                name: "seminar");
 
             migrationBuilder.DropTable(
                 name: "Questions");

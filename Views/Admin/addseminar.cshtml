@@ -1,0 +1,136 @@
+﻿@model E_project2025.Models.SeminarViewModel
+
+@{
+    ViewData["Title"] = "Add Seminar";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<div class="body-wrapper">
+    <div class="container-fluid">
+        <div class="card card-body py-3 shadow-none position-relative overflow-hidden mb-4">
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <div>
+                    <h4 class="fw-semibold mb-1">Add New Seminar</h4>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb mb-0">
+                            <li class="breadcrumb-item"><a class="text-muted" href="/Admin/Index">Dashboard</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Add Seminar</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-10 col-12">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-white border-bottom py-3">
+                        <h5 class="card-title mb-0 fw-bold text-primary">Seminar Information</h5>
+                    </div>
+                    <div class="card-body p-4">
+                        <form id="seminarForm" asp-action="AddSeminar" enctype="multipart/form-data">
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <label asp-for="Seminar.Title" class="form-label fw-semibold">Seminar Title</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-light"><i class="fa fa-font text-primary"></i></span>
+                                        <input asp-for="Seminar.Title" class="form-control" placeholder="Enter title" required id="title" />
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 mb-4">
+                                    <label asp-for="Seminar.Venue" class="form-label fw-semibold">Venue / Location</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-light"><i class="fa fa-map-marker text-danger"></i></span>
+                                        <input asp-for="Seminar.Venue" class="form-control" placeholder="Enter venue" id="venue" required />
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 mb-4">
+                                    <label asp-for="Seminar.ImageUrl" class="form-label fw-semibold">Image URL</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-light"><i class="fa fa-image text-info"></i></span>
+                                        <input asp-for="Seminar.ImageUrl" type="file" class="form-control" id="file" />
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 mb-4">
+                                    <label class="form-label fw-semibold">Assign to User/Faculty</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-light"><i class="fa fa-user text-warning"></i></span>
+                                       <select asp-for="Seminar.UserId"
+        asp-items="@(new SelectList(Model.Users, "Id", "FirstName"))"
+        class="form-select"
+        id="Users">
+    <option value="">-- Select User --</option>
+</select>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-12 mb-4">
+                                    <label asp-for="Seminar.Description" class="form-label fw-semibold">Seminar Description</label>
+                                    <textarea asp-for="Seminar.Description" class="form-control" rows="4" placeholder="Briefly describe the seminar..." id="description"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-center justify-content-end gap-3 mt-3 border-top pt-4">
+                                <button type="reset" class="btn btn-light px-4">Clear Form</button>
+                                <button type="button" id="submitBtn" class="btn btn-primary px-5 shadow-sm">
+                                    <i class="fa fa-plus-circle me-2"></i> Create Seminar
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="py-6 text-center mt-4">
+            <p class="mb-0 fs-4 text-muted">
+                &copy; @DateTime.Now.Year Design and Developed by
+                <a href="#" class="pe-1 text-primary text-decoration-underline fw-bold">
+                    WAIZ WEB & AI SOLUTIONS
+                </a>
+            </p>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script>
+    $("#submitBtn").click(function () {
+
+        var formData = new FormData();
+        formData.append("title", $("#title").val());
+        formData.append("venue", $("#venue").val());
+        formData.append("file", $("#file")[0].files[0]); 
+        formData.append("Users", $("#Users").val());
+        formData.append("description", $("#description").val());
+
+        $.ajax({
+            url: '/Admin/AddSeminar',
+            type: 'POST',
+            data: formData,
+            processData: false, 
+            contentType: false, 
+            success: function (response) {
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Success',
+                    text: response.success
+                });
+                $("#seminarForm")[0].reset();
+            },
+            error: function () {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Server Error',
+                    text: 'Something went wrong!'
+                });
+            }
+        });
+    });
+</script>
