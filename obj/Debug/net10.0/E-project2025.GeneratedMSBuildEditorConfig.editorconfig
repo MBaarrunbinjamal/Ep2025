@@ -194,6 +194,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cYWRkc2VtaW5hci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Baarrun/Ep2025/Views/Admin/fetchanswers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cZmV0Y2hhbnN3ZXJzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Baarrun/Ep2025/Views/Admin/fetchsurvays.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cZmV0Y2hzdXJ2YXlzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

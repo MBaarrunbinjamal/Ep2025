@@ -17,6 +17,8 @@ public class E_project2025Context : IdentityDbContext<E_project2025User>
     public DbSet<seminar> seminar { get; set; }
     public DbSet<Answers> Answers { get; set; }
 
+ 
+
 
     protected override void OnModelCreating(ModelBuilder builder)
     {
