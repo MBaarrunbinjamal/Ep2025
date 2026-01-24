@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "D:\\Baarrun\\Ep2025\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|d:\\baarrun\\ep2025\\views\\shared\\facultylayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:views\\shared\\facultylayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|d:\\baarrun\\ep2025\\views\\shared\\adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:views\\shared\\adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|d:\\baarrun\\ep2025\\controllers\\facultycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:controllers\\facultycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -43,10 +51,6 @@
       "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:models\\seminar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|d:\\baarrun\\ep2025\\views\\shared\\adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:views\\shared\\adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|d:\\baarrun\\ep2025\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -81,10 +85,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|d:\\baarrun\\ep2025\\views\\faculty\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:views\\faculty\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|d:\\baarrun\\ep2025\\views\\shared\\facultylayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:views\\shared\\facultylayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|d:\\baarrun\\ep2025\\views\\faculty\\fetchfacultyquestions.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -130,33 +130,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ContactController.cs",
-              "DocumentMoniker": "D:\\Baarrun\\Ep2025\\Controllers\\ContactController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ContactController.cs",
-              "ToolTip": "D:\\Baarrun\\Ep2025\\Controllers\\ContactController.cs",
-              "RelativeToolTip": "Controllers\\ContactController.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAwwBkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-24T09:25:12.062Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Login.cshtml.cs",
-              "DocumentMoniker": "D:\\Baarrun\\Ep2025\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
-              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
-              "ToolTip": "D:\\Baarrun\\Ep2025\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
-              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
-              "ViewState": "AgIAAGYAAAAAAAAAAAAcwHQAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-24T09:05:54.367Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Baarrun\\Ep2025\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
@@ -164,12 +138,11 @@
               "RelativeToolTip": "Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-24T09:00:53.798Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-24T09:00:53.798Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "HomeController.cs",
               "DocumentMoniker": "D:\\Baarrun\\Ep2025\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
@@ -177,12 +150,11 @@
               "RelativeToolTip": "Controllers\\HomeController.cs",
               "ViewState": "AgIAAIkAAAAAAAAAAAAcwJQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-23T21:44:36.397Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-23T21:44:36.397Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "seminar.cs",
               "DocumentMoniker": "D:\\Baarrun\\Ep2025\\Models\\seminar.cs",
               "RelativeDocumentMoniker": "Models\\seminar.cs",
@@ -194,20 +166,70 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "FacultyController.cs",
               "DocumentMoniker": "D:\\Baarrun\\Ep2025\\Controllers\\FacultyController.cs",
               "RelativeDocumentMoniker": "Controllers\\FacultyController.cs",
               "ToolTip": "D:\\Baarrun\\Ep2025\\Controllers\\FacultyController.cs",
               "RelativeToolTip": "Controllers\\FacultyController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD4AAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-24T03:25:42.967Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
+              "Title": "AdminLayout.cshtml",
+              "DocumentMoniker": "D:\\Baarrun\\Ep2025\\Views\\Shared\\AdminLayout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\AdminLayout.cshtml",
+              "ToolTip": "D:\\Baarrun\\Ep2025\\Views\\Shared\\AdminLayout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\AdminLayout.cshtml",
+              "ViewState": "AgIAAJsAAAAAAAAAAAAAAKYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-24T02:20:44.299Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FacultyLayout.cshtml",
+              "DocumentMoniker": "D:\\Baarrun\\Ep2025\\Views\\Shared\\FacultyLayout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\FacultyLayout.cshtml",
+              "ToolTip": "D:\\Baarrun\\Ep2025\\Views\\Shared\\FacultyLayout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\FacultyLayout.cshtml",
+              "ViewState": "AgIAAH8AAAAAAAAAAAAcwI0AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-24T03:23:27.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Login.cshtml.cs",
+              "DocumentMoniker": "D:\\Baarrun\\Ep2025\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "ToolTip": "D:\\Baarrun\\Ep2025\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAcwHQAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-24T09:05:54.367Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ContactController.cs",
+              "DocumentMoniker": "D:\\Baarrun\\Ep2025\\Controllers\\ContactController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ContactController.cs",
+              "ToolTip": "D:\\Baarrun\\Ep2025\\Controllers\\ContactController.cs",
+              "RelativeToolTip": "Controllers\\ContactController.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAwwBkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-24T09:25:12.062Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "Answers.cs",
               "DocumentMoniker": "D:\\Baarrun\\Ep2025\\Models\\Answers.cs",
               "RelativeDocumentMoniker": "Models\\Answers.cs",
@@ -219,7 +241,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "AdminController.cs",
               "DocumentMoniker": "D:\\Baarrun\\Ep2025\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
@@ -227,24 +249,11 @@
               "RelativeToolTip": "Controllers\\AdminController.cs",
               "ViewState": "AgIAAPYAAAAAAAAAAAAiwPMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-23T22:23:11.276Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-23T22:23:11.276Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "AdminLayout.cshtml",
-              "DocumentMoniker": "D:\\Baarrun\\Ep2025\\Views\\Shared\\AdminLayout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\AdminLayout.cshtml",
-              "ToolTip": "D:\\Baarrun\\Ep2025\\Views\\Shared\\AdminLayout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\AdminLayout.cshtml",
-              "ViewState": "AgIAAJkAAAAAAAAAAAAkwKAAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-24T02:20:44.299Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "Survay.cs",
               "DocumentMoniker": "D:\\Baarrun\\Ep2025\\Models\\Survay.cs",
               "RelativeDocumentMoniker": "Models\\Survay.cs",
@@ -256,7 +265,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Baarrun\\Ep2025\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -264,12 +273,11 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAFEAAAAAAAAAAAAAAAUAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-23T21:24:11.363Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-23T21:24:11.363Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "D:\\Baarrun\\Ep2025\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
@@ -281,7 +289,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "addseminar.cshtml",
               "DocumentMoniker": "D:\\Baarrun\\Ep2025\\Views\\Admin\\addseminar.cshtml",
               "RelativeDocumentMoniker": "Views\\Admin\\addseminar.cshtml",
@@ -293,7 +301,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "fetchanswers.cshtml",
               "DocumentMoniker": "D:\\Baarrun\\Ep2025\\Views\\Admin\\fetchanswers.cshtml",
               "RelativeDocumentMoniker": "Views\\Admin\\fetchanswers.cshtml",
@@ -305,7 +313,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "fetchseminarregisteration.cshtml",
               "DocumentMoniker": "D:\\Baarrun\\Ep2025\\Views\\Admin\\fetchseminarregisteration.cshtml",
               "RelativeDocumentMoniker": "Views\\Admin\\fetchseminarregisteration.cshtml",
@@ -317,7 +325,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "SeminarRegistration.cs",
               "DocumentMoniker": "D:\\Baarrun\\Ep2025\\Models\\SeminarRegistration.cs",
               "RelativeDocumentMoniker": "Models\\SeminarRegistration.cs",
@@ -329,7 +337,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "seminars.cshtml",
               "DocumentMoniker": "D:\\Baarrun\\Ep2025\\Views\\Home\\seminars.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\seminars.cshtml",
@@ -353,7 +361,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "fetrchcontact.cshtml",
               "DocumentMoniker": "D:\\Baarrun\\Ep2025\\Views\\Admin\\fetrchcontact.cshtml",
               "RelativeDocumentMoniker": "Views\\Admin\\fetrchcontact.cshtml",
@@ -365,19 +373,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "FacultyLayout.cshtml",
-              "DocumentMoniker": "D:\\Baarrun\\Ep2025\\Views\\Shared\\FacultyLayout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\FacultyLayout.cshtml",
-              "ToolTip": "D:\\Baarrun\\Ep2025\\Views\\Shared\\FacultyLayout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\FacultyLayout.cshtml",
-              "ViewState": "AgIAAGEAAAAAAAAAAAAIwFsAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-24T03:23:27.096Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "E_project2025Context.cs",
               "DocumentMoniker": "D:\\Baarrun\\Ep2025\\Areas\\Identity\\Data\\E_project2025Context.cs",
               "RelativeDocumentMoniker": "Areas\\Identity\\Data\\E_project2025Context.cs",
@@ -389,7 +385,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Baarrun\\Ep2025\\Views\\Faculty\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Faculty\\Index.cshtml",

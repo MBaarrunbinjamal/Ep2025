@@ -120,6 +120,26 @@
                             <span class="menu-title">Surveys</span>
                         </a>
                     </li>
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <li class="nav-item">
+                            <span class="nav-link fw-bold text-success">👋 @User.Identity.Name</span>
+                        </li>
+                        <li class="nav-item ms-2">
+                            <form id="logoutForm" asp-area="Identity" asp-page="/Account/Logout"
+                                  asp-route-returnUrl="@Url.Action("Index", "Home")">
+                                <button type="button" onclick="confirmLogout()" class="btn btn-danger">
+                                    Logout
+                                </button>
+                            </form>
+
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="nav-item"><a class="btn btn-outline-success me-2" href="/Identity/Account/Login">Login</a></li>
+                        <li class="nav-item"><a class="btn btn-success rounded-pill px-4" href="/Identity/Account/Register">Join</a></li>
+                    }
                 </ul>
             </nav>
 
@@ -140,6 +160,13 @@
     <script>
         function toggleSidebar() {
             document.getElementById('sidebar').classList.toggle('active');
+        }
+    </script>
+    <script>
+        function confirmLogout() {
+            if (confirm("Are you sure you want to logout?")) {
+                document.getElementById("logoutForm").submit();
+            }
         }
     </script>
 </body>

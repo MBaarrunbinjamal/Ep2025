@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\Baarrun\\Ep2025\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|d:\\baarrun\\ep2025\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|d:\\baarrun\\ep2025\\controllers\\facultycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:controllers\\facultycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|d:\\baarrun\\ep2025\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5D579408-4778-193C-AD75-8A367F253E3C}|E-project2025.csproj|d:\\baarrun\\ep2025\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -126,7 +126,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
@@ -134,8 +134,8 @@
               "Title": "ContactController.cs",
               "DocumentMoniker": "D:\\Baarrun\\Ep2025\\Controllers\\ContactController.cs",
               "RelativeDocumentMoniker": "Controllers\\ContactController.cs",
-              "ToolTip": "D:\\Baarrun\\Ep2025\\Controllers\\ContactController.cs*",
-              "RelativeToolTip": "Controllers\\ContactController.cs*",
+              "ToolTip": "D:\\Baarrun\\Ep2025\\Controllers\\ContactController.cs",
+              "RelativeToolTip": "Controllers\\ContactController.cs",
               "ViewState": "AgIAACEAAAAAAAAAAAAwwBkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-24T09:25:12.062Z",
@@ -147,8 +147,8 @@
               "Title": "Login.cshtml.cs",
               "DocumentMoniker": "D:\\Baarrun\\Ep2025\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
-              "ToolTip": "D:\\Baarrun\\Ep2025\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs*",
-              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Login.cshtml.cs*",
+              "ToolTip": "D:\\Baarrun\\Ep2025\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
               "ViewState": "AgIAAGYAAAAAAAAAAAAcwHQAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-24T09:05:54.367Z",
@@ -169,13 +169,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "HomeController.cs",
               "DocumentMoniker": "D:\\Baarrun\\Ep2025\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "D:\\Baarrun\\Ep2025\\Controllers\\HomeController.cs*",
-              "RelativeToolTip": "Controllers\\HomeController.cs*",
-              "ViewState": "AgIAAE0AAAAAAAAAAAAcwFgAAAAAAAAAAAAAAA==",
+              "ToolTip": "D:\\Baarrun\\Ep2025\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAIkAAAAAAAAAAAAcwJQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-23T21:44:36.397Z",
               "EditorCaption": ""
@@ -194,13 +194,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "FacultyController.cs",
               "DocumentMoniker": "D:\\Baarrun\\Ep2025\\Controllers\\FacultyController.cs",
               "RelativeDocumentMoniker": "Controllers\\FacultyController.cs",
               "ToolTip": "D:\\Baarrun\\Ep2025\\Controllers\\FacultyController.cs",
               "RelativeToolTip": "Controllers\\FacultyController.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAowBYAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD4AAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-24T03:25:42.967Z",
               "EditorCaption": ""
@@ -223,8 +223,8 @@
               "Title": "AdminController.cs",
               "DocumentMoniker": "D:\\Baarrun\\Ep2025\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
-              "ToolTip": "D:\\Baarrun\\Ep2025\\Controllers\\AdminController.cs*",
-              "RelativeToolTip": "Controllers\\AdminController.cs*",
+              "ToolTip": "D:\\Baarrun\\Ep2025\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Controllers\\AdminController.cs",
               "ViewState": "AgIAAPYAAAAAAAAAAAAiwPMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-23T22:23:11.276Z",
