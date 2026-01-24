@@ -71,7 +71,7 @@ namespace E_project2025.Controllers
 
             return RedirectToAction("FetchSurveys");
         }
-        [Route("Home/seminars")]
+  
       
         public IActionResult Seminar()
         {
@@ -105,8 +105,26 @@ namespace E_project2025.Controllers
 
             return Json("success");
         }
+        public void LoadLatestAward()
+        {
+            if (!User.Identity.IsAuthenticated) return;
 
+            var userId = dbcontext.Users
+                .Where(u => u.UserName == User.Identity.Name)
+                .Select(u => u.Id)
+                .FirstOrDefault();
 
+            var latestAwardedSurvey = dbcontext.Answers
+                .Where(a => a.UserId == userId && a.survey.status == "Awarded")
+                .OrderByDescending(a => a.survey.AwardedOn)
+                .Select(a => a.survey)
+                .Distinct()
+                .FirstOrDefault();
+
+            ViewBag.LatestAwardedSurvey = latestAwardedSurvey;
+        }
+
+       
 
     }
 

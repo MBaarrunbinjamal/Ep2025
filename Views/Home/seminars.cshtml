@@ -10,7 +10,8 @@
     {
         <div class="col-md-4 mb-4">
             <div class="card shadow">
-                <img src="@item.ImageUrl" class="card-img-top" />
+                <img src="~/uploads/@item.ImageUrl" class="card-img-top" />
+
 
                 <div class="card-body">
                     <h5>@item.Title</h5>
@@ -27,18 +28,11 @@
     }
 </div>
 
-<!-- SUCCESS MODAL -->
-<div class="modal fade" id="successModal">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-body text-center">
-                <h4 class="text-success">✔ Successfully Registered</h4>
-                <p>You have been registered for this seminar.</p>
-                <button class="btn btn-success" data-bs-dismiss="modal">OK</button>
-            </div>
-        </div>
-    </div>
+
 </div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 <script>
     function registerSeminar(id) {
@@ -47,14 +41,34 @@
             type: 'POST',
             data: { seminarId: id },
             success: function (res) {
+
                 if (res === "success") {
-                    var modal = new bootstrap.Modal(document.getElementById('successModal'));
-                    modal.show();
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Registered!',
+                        text: 'You have been successfully registered for this seminar.',
+                        confirmButtonText: 'OK'
+                    });
                 }
                 else if (res === "login-required") {
-                    alert("Please login first");
+                    Swal.fire({
+                        icon: 'warning',
+                        title: 'Login Required',
+                        text: 'Please login first to register.',
+                        confirmButtonText: 'Login'
+                    }).then(() => {
+                        window.location.href = '/Account/Login';
+                    });
                 }
+            },
+            error: function () {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops!',
+                    text: 'Something went wrong. Please try again.'
+                });
             }
         });
     }
 </script>
+

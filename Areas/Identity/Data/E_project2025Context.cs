@@ -17,10 +17,7 @@ public class E_project2025Context : IdentityDbContext<E_project2025User>
 
     public DbSet<Survay> Survays { get; set; }
     public DbSet<Question> Questions { get; set; }
-<<<<<<< HEAD
-=======
-  
->>>>>>> bd9066fd25afaa6bcccdc7b5e5bcc5c465bd5f3b
+
     public DbSet<Answers> Answers { get; set; }
 
     // ✅ Add ContactModel DbSet here

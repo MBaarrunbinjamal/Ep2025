@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Security.Claims;
 
-namespace E_project2025.Controllers
+namespace E_project2025.Controllers 
 {
 
    
@@ -210,13 +210,32 @@ namespace E_project2025.Controllers
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
 
-            var answers = dbcontext.Answers .Include(a => a.questions)
-                .Where(a => a.UserId == userId)
-                .ToList();
+            var MyAnswers = dbcontext.Answers
+     .Include(a => a.survey)
+     .Include(a => a.users)
+     .Include(a => a.questions)
+     .ToList();
 
-            return View("FetchAnswers", answers);
+           
+
+
+            return View("FetchAnswers", MyAnswers);
         }
 
+        [HttpPost]
+        public IActionResult AwardSurvey(int surveyId)
+        {
+            var survey = dbcontext.Survays.FirstOrDefault(s => s.Id == surveyId);
+
+            if (survey == null)
+                return NotFound();
+
+            survey.status = "Awarded";
+            survey.AwardedOn = DateTime.Now; // 👈 important for latest
+            dbcontext.SaveChanges();
+
+            return Ok();
+        }
 
     }
 }

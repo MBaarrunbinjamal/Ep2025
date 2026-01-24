@@ -1,86 +1,183 @@
 ﻿@model IEnumerable<E_project2025.Models.Answers>
+
 @{
     ViewData["Title"] = "Survey Answers";
     Layout = "~/Views/Shared/AdminLayout.cshtml";
+
+    var groupedAnswers = Model
+        .GroupBy(a => new { a.SurveyId, a.UserId })
+        .ToList();
 }
 
 <div class="body-wrapper">
     <div class="container-fluid">
-        <div class="card card-body py-3 shadow-none position-relative overflow-hidden mb-4">
-            <div class="d-sm-flex align-items-center justify-content-between">
-                <div>
-                    <h4 class="fw-semibold mb-1">Survey Responses</h4>
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb mb-0">
-                            <li class="breadcrumb-item"><a class="text-muted" href="/Admin/Index">Dashboard</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Fetch Answers</li>
-                        </ol>
-                    </nav>
-                </div>
-            </div>
-        </div>
 
-        <div class="card w-100">
-            <div class="card-body p-4">
-                <div class="d-flex align-items-center justify-content-between mb-4">
-                    <h5 class="card-title fw-semibold mb-0">All User Answers</h5>
-                </div>
+      
+
+        <!-- TABLE CARD -->
+        <div class="card">
+            <div class="card-body">
+
+                <h5 class="card-title mb-4">All Survey Submissions</h5>
 
                 <div class="table-responsive">
-                    <table class="table table-striped table-hover align-middle text-nowrap mb-0">
-                        <thead class="text-dark fs-4 bg-light">
+                    <table class="table table-striped table-hover align-middle">
+                        <thead class="bg-light">
                             <tr>
-                                <th class="border-bottom-0"><h6 class="fw-semibold mb-0">ID</h6></th>
-                                <th class="border-bottom-0"><h6 class="fw-semibold mb-0">Survey</h6></th>
-                                <th class="border-bottom-0"><h6 class="fw-semibold mb-0">Question</h6></th>
-                                <th class="border-bottom-0"><h6 class="fw-semibold mb-0">Answer</h6></th>
-                                <th class="border-bottom-0"><h6 class="fw-semibold mb-0">User</h6></th>
+                                <th>Survey</th>
+                                <th>User</th>
+                                <th>Role</th>
+                               <th>status</th>
+                                <th>Answers</th>
+                                <th>Award</th>
                             </tr>
                         </thead>
+
                         <tbody>
-                            @if (!Model.Any())
+                            @if (!groupedAnswers.Any())
                             {
                                 <tr>
-                                    <td colspan="5" class="text-center py-4 text-muted">Bhai, abhi tak koi answers nahi mile.</td>
+                                    <td colspan="4" class="text-center text-muted py-4">
+                                        No survey responses yet.
+                                    </td>
                                 </tr>
                             }
-                            @foreach (var item in Model)
+
+                            @foreach (var group in groupedAnswers)
                             {
+                                var first = group.FirstOrDefault();
+                                if (first == null)
+                                {
+                                    continue;
+                                }
+
+                                var modalId = $"answersModal-{first.SurveyId}-{first.UserId}";
+
                                 <tr>
-                                    <td class="border-bottom-0">
-                                        <span class="fw-bold">#@item.Id</span>
+                                    <td>
+                                        <strong class="text-primary">
+                                            @first.survey?.Title  
+                                        </strong>
                                     </td>
-                                    <td class="border-bottom-0">
-                                    <td class="border-bottom-0">
-                                        <div class="d-flex align-items-center">
-                                            <div class="ms-0">
-                                                <h6 class="fw-semibold mb-0 fs-3 text-primary">@item.survey.Title</h6>
-                                            </div>
-                                        </div>
+
+                                    <td>
+                                        <i class="ti ti-user me-1"></i>
+                                        @first.users?.UserName 
                                     </td>
-                                    <td class="border-bottom-0">
-                                        <p class="mb-0 fw-normal" style="max-width: 200px; overflow: hidden; text-overflow: ellipsis;">
-                                            @item.questions.QuestionText
-                                        </p>
+                                    <td>
+                                        @first.survey.Role
                                     </td>
-                                    <td class="border-bottom-0">
-                                        <span class="badge bg-light-info text-info fw-semibold fs-2">
-                                            @item.Answertoquestion
-                                        </span>
+                                    <td>
+                                        @first.survey.status
                                     </td>
-                                    <td class="border-bottom-0">
-                                        <div class="d-flex align-items-center gap-2">
-                                            <i class="ti ti-user fs-4 text-muted"></i>
-                                            <p class="mb-0 fw-normal">@item.users.UserName</p>
-                                        </div>
+                                    <td>
+                                        <button class="btn btn-info btn-sm"
+                                                data-bs-toggle="modal"
+                                                data-bs-target="#@modalId">
+                                            View Answers
+                                        </button>
+                                    </td>
+
+                                    <td>
+                                        <button class="btn btn-success btn-sm award-btn"
+                                                data-surveyid="@first.SurveyId"
+                                                data-username="@first.users.UserName">
+                                            Award
+                                        </button>
+
+
                                     </td>
                                 </tr>
+
+                                <!-- ANSWERS MODAL -->
+                                <div class="modal fade"
+                                     id="@modalId"
+                                     tabindex="-1">
+                                    <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">
+                                                    @first.survey?.Title 
+                                                </h5>
+                                                <button type="button"
+                                                        class="btn-close"
+                                                        data-bs-dismiss="modal">
+                                                </button>
+                                            </div>
+
+                                            <div class="modal-body">
+
+                                                <p class="text-muted mb-4">
+                                                    Submitted by
+                                                    <strong>
+                                                        @first.users?.FirstName " " @first.users.LastName 
+                                                    </strong>
+                                                </p>
+
+                                                @foreach (var ans in group)
+                                                { 
+                                                    <div class="card mb-3 shadow-sm">
+                                                        <div class="card-body">
+                                                            <h6 class="fw-semibold mb-2">
+                                                                Q: @ans.questions?.QuestionText ?
+                                                            </h6>
+                                                            <p class="mb-0 text-success">
+                                                                <strong>Answer:</strong>
+                                                                @ans.Answertoquestion 
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                }
+
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">
+                                                    Close
+                                                </button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
                             }
                         </tbody>
                     </table>
                 </div>
+
             </div>
         </div>
 
     </div>
 </div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+$(document).on("click", ".award-btn", function () {
+
+    const surveyId = $(this).data("surveyid");
+
+    Swal.fire({
+        title: "Confirm Award",
+        text: "Mark this survey as awarded?",
+        icon: "question",
+        showCancelButton: true,
+        confirmButtonText: "Yes, Award"
+    }).then((result) => {
+
+        if (result.isConfirmed) {
+            $.ajax({
+                url: "/Admin/AwardSurvey",
+                type: "POST",
+                data: { surveyId: surveyId },
+                success: function () {
+                    Swal.fire("Awarded!", "Survey marked as awarded.", "success")
+                        .then(() => location.reload());
+                }
+            });
+        }
+    });
+});
+</script>

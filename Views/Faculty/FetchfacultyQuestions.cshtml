@@ -5,22 +5,53 @@
     Layout = "~/Views/Shared/FacultyLayout.cshtml";
 }
 
+<div class="row">
+    <div class="col-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <div>
+                        <h3 class="card-title mb-0" style="font-size: 1.5rem;">@ViewBag.surveyName</h3>
+                        <p class="text-muted mt-1">Please provide detailed answers for each question below.</p>
+                    </div>
+                    <i class="mdi mdi-clipboard-text text-primary h3"></i>
+                </div>
 
-<h3>@ViewBag.surveyName</h3>
-<hr />
+                <hr class="mb-4" />
 
-<form asp-action="SubmitAnswers" method="post">
-    <input type="hidden" name="SurveyId" value="@ViewBag.surveyId" />
+                <form asp-action="SubmitAnswers" method="post" class="forms-sample">
+                    <input type="hidden" name="SurveyId" value="@ViewBag.surveyId" />
 
-    @foreach (var item in Model)
-    {
-        <div class="mb-3">
-            <h5>@item.QuestionText</h5>
-            <input type="hidden" name="QuestionIds" value="@item.Id" />
-            <input type="text" name="AnswersText" class="form-control" placeholder="Enter your answer" />
+                    @foreach (var item in Model)
+                    {
+                        <div class="form-group mb-5">
+                            <label class="fw-bold text-dark mb-2" style="font-size: 1.1rem;">
+                                <i class="mdi mdi-help-circle-outline text-info me-1"></i>
+                                @item.QuestionText
+                            </label>
+
+                            <input type="hidden" name="QuestionIds" value="@item.Id" />
+
+                            <div class="input-group">
+                                <input type="text"
+                                       name="AnswersText"
+                                       class="form-control form-control-lg border-primary"
+                                       placeholder="Type your response here..."
+                                       required />
+                            </div>
+                            <small class="text-muted">Response is required.</small>
+                        </div>
+                    }
+
+                    <div class="mt-4 pt-3 border-top d-flex justify-content-end">
+                        <button type="reset" class="btn btn-light me-2">Clear Form</button>
+                        <button type="submit" class="btn btn-primary btn-icon-text">
+                            <i class="ti-file btn-icon-prepend"></i>
+                            Submit All Answers
+                        </button>
+                    </div>
+                </form>
+            </div>
         </div>
-        <hr />
-    }
-
-    <button type="submit" class="btn btn-success">Submit Answers</button>
-</form>
+    </div>
+</div>
