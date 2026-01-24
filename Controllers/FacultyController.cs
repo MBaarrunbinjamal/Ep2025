@@ -1,5 +1,6 @@
 ﻿using E_project2025.Data;
 using E_project2025.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -12,14 +13,20 @@ namespace E_project2025.Controllers
         {
             dbcontext = _dbcontext;
         }
+        [Authorize(Roles = "Faculty")]
+
         public IActionResult Index()
         {
             return View();
         }
+        [Authorize(Roles = "Faculty")]
+
         public IActionResult ViewSurveys()
         {
             return View();
         }
+        [Authorize(Roles = "Faculty")]
+
         public IActionResult FetchSurveys()
         {
             var surveys = dbcontext.Survays
@@ -32,6 +39,8 @@ namespace E_project2025.Controllers
 
             return View(surveys);
         }
+        [Authorize(Roles = "Faculty")]
+
         public IActionResult FetchfacultyQuestions(int surveyId)
         {
             var survey = dbcontext.Survays.Find(surveyId);
@@ -40,6 +49,8 @@ namespace E_project2025.Controllers
             ViewBag.surveyId = survey.Id;
             return View(questions);
         }
+        [Authorize(Roles = "Faculty")]
+
         public IActionResult SubmitAnswers(int SurveyId, string[] AnswersText, int[] QuestionIds)
         {
             var userId = User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier).Value;

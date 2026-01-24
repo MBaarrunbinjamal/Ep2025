@@ -105,11 +105,15 @@ namespace E_project2025.Areas.Identity.Pages.Account
                     // 🔹 ROLE-BASED REDIRECT
                     if (await _userManager.IsInRoleAsync(user, "Admin"))
                     {
-                        return RedirectToAction("Dashboard", "Admin");
+                        return RedirectToAction("Index", "Admin");
                     }
                     else if (await _userManager.IsInRoleAsync(user, "User"))
                     {
                         return RedirectToAction("Index", "Home");
+                    }
+                    else if(await _userManager.IsInRoleAsync(user, "Faculty"))
+                    {
+                        return RedirectToAction("Index", "Faculty");
                     }
                 }
 

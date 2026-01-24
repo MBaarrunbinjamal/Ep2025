@@ -1,5 +1,6 @@
 ﻿using E_project2025.Data;
 using E_project2025.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace E_project2025.Controllers
@@ -14,12 +15,14 @@ namespace E_project2025.Controllers
         }
 
         // GET: Contact
+        [Authorize(Roles = "User")]
+
         public IActionResult Index()
         {
             return View();
         }
+        [Authorize(Roles = "User")]
 
-        // POST: Contact/Submit
         [HttpPost]
         public IActionResult Submit(ContactModel model)
         {

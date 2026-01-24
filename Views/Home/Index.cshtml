@@ -42,3 +42,26 @@
                 </div>
             </div>
         </div>
+        @model dynamic
+
+<div class="container mt-5">
+    @if (Model != null)
+    {
+        <div class="card text-center shadow" style="max-width: 400px; margin:auto;">
+            <div class="card-header bg-success text-white">
+                Latest Awarded Winner
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">@Model.UserName</h5>
+                <p class="card-text">
+                    Survey: <strong>@Model.SurveyTitle</strong> <br />
+                    Status: <strong>@Model.SurveyStatus</strong>
+                </p>
+            </div>
+        </div>
+    }
+    else
+    {
+        <p class="text-center text-muted">No awarded survey yet.</p>
+    }
+</div>

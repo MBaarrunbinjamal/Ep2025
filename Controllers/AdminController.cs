@@ -39,13 +39,13 @@ namespace E_project2025.Controllers
 
             return View();
         }
-        //[Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Admin")]
 
         public IActionResult Users() {
             var users = dbcontext.Users.ToList();
             return View(users);
         }
-        //[Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Admin")]
 
         [HttpPost]
         public async Task<IActionResult> ChangeUserRole(string userId, string role)
@@ -61,8 +61,8 @@ namespace E_project2025.Controllers
 
             return Json(new { message = "User role updated successfully!" });
         }
-        //[ValidateAntiForgeryToken] 
-        //[Authorize(Roles = "Admin")]
+        [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
 
         [HttpPost]
         public async Task<IActionResult> Approve(string userid)
@@ -82,10 +82,12 @@ namespace E_project2025.Controllers
 
             return Json(new { message = "User has been approved successfully!" });
         }
+        [Authorize(Roles = "Admin")]
 
         public IActionResult uploadsurways() {
             return View();
         }
+        [Authorize(Roles = "Admin")]
 
         [HttpPost]
         public IActionResult createsurvay(string title,  DateTime expiry , string Role)
@@ -120,7 +122,6 @@ namespace E_project2025.Controllers
 
         [Authorize(Roles = "Admin")]
 
-        [Authorize]
     [HttpPost]
     public IActionResult CreateBulk([FromBody] QuestionBulkDto model)
     {
@@ -141,8 +142,8 @@ namespace E_project2025.Controllers
 
         return Json(new { success = true, message = "Questions inserted successfully!" });
     }
-        //[Authorize(Roles = "Admin")]
-        //[HttpPost]
+        [Authorize(Roles = "Admin")]
+        [HttpPost]
         public async Task<IActionResult> addseminar()
         {
             var admins = await _userManager.GetUsersInRoleAsync("Admin");
@@ -161,6 +162,7 @@ namespace E_project2025.Controllers
 
             return View(vm);
         }
+        [Authorize(Roles = "Admin")]
 
         [HttpPost]
         public async Task<IActionResult> AddSeminar(
@@ -203,6 +205,7 @@ namespace E_project2025.Controllers
 
             return Json(new { success = "Seminar submitted successfully!" });
         }
+        [Authorize(Roles = "Admin")]
 
         [Authorize]
         public IActionResult MyAnswers()
@@ -221,6 +224,7 @@ namespace E_project2025.Controllers
 
             return View("FetchAnswers", MyAnswers);
         }
+        [Authorize(Roles = "Admin")]
 
         [HttpPost]
         public IActionResult AwardSurvey(int surveyId)
@@ -236,6 +240,8 @@ namespace E_project2025.Controllers
 
             return Ok();
         }
+        [Authorize(Roles = "Admin")]
+
         public IActionResult fetrchcontact()
         {
             var contact = dbcontext.ContactModels.ToList();
