@@ -28,49 +28,55 @@
                         <h5 class="card-title mb-0 fw-bold text-primary">Seminar Information</h5>
                     </div>
                     <div class="card-body p-4">
-                        <form id="seminarForm" asp-action="AddSeminar" enctype="multipart/form-data">
+                        <form id="seminarForm" enctype="multipart/form-data">
                             <div class="row">
                                 <div class="col-md-6 mb-4">
-                                    <label asp-for="Seminar.Title" class="form-label fw-semibold">Seminar Title</label>
+                                    <label class="form-label fw-semibold">Seminar Title</label>
                                     <div class="input-group">
                                         <span class="input-group-text bg-light"><i class="fa fa-font text-primary"></i></span>
-                                        <input asp-for="Seminar.Title" class="form-control" placeholder="Enter title" required id="title" />
+                                        <input type="text" class="form-control" placeholder="Enter title" id="title" required />
                                     </div>
                                 </div>
 
                                 <div class="col-md-6 mb-4">
-                                    <label asp-for="Seminar.Venue" class="form-label fw-semibold">Venue / Location</label>
+                                    <label class="form-label fw-semibold">Event Date & Time</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-light"><i class="fa fa-calendar text-info"></i></span>
+                                        <input type="datetime-local" class="form-control" id="eventDate" required />
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 mb-4">
+                                    <label class="form-label fw-semibold">Venue / Location</label>
                                     <div class="input-group">
                                         <span class="input-group-text bg-light"><i class="fa fa-map-marker text-danger"></i></span>
-                                        <input asp-for="Seminar.Venue" class="form-control" placeholder="Enter venue" id="venue" required />
+                                        <input type="text" class="form-control" placeholder="Enter venue" id="venue" required />
                                     </div>
                                 </div>
 
                                 <div class="col-md-6 mb-4">
-                                    <label asp-for="Seminar.ImageUrl" class="form-label fw-semibold">Image URL</label>
+                                    <label class="form-label fw-semibold">Seminar Poster (Image)</label>
                                     <div class="input-group">
                                         <span class="input-group-text bg-light"><i class="fa fa-image text-info"></i></span>
-                                        <input asp-for="Seminar.ImageUrl" type="file" class="form-control" id="file" />
+                                        <input type="file" class="form-control" id="file" accept="image/*" />
                                     </div>
                                 </div>
 
-                                <div class="col-md-6 mb-4">
-                                    <label class="form-label fw-semibold">Assign to User/Faculty</label>
+                                <div class="col-md-12 mb-4">
+                                    <label class="form-label fw-semibold">Assign to Faculty/User</label>
                                     <div class="input-group">
                                         <span class="input-group-text bg-light"><i class="fa fa-user text-warning"></i></span>
-                                       <select asp-for="Seminar.UserId"
-        asp-items="@(new SelectList(Model.Users, "Id", "FirstName"))"
-        class="form-select"
-        id="Users">
-    <option value="">-- Select User --</option>
-</select>
-
+                                        <select asp-for="Seminar.UserId"
+                                                asp-items="@(new SelectList(Model.Users, "Id", "FirstName"))"
+                                                class="form-select" id="Users">
+                                            <option value="">-- Select User --</option>
+                                        </select>
                                     </div>
                                 </div>
 
                                 <div class="col-12 mb-4">
-                                    <label asp-for="Seminar.Description" class="form-label fw-semibold">Seminar Description</label>
-                                    <textarea asp-for="Seminar.Description" class="form-control" rows="4" placeholder="Briefly describe the seminar..." id="description"></textarea>
+                                    <label class="form-label fw-semibold">Seminar Description</label>
+                                    <textarea class="form-control" rows="4" placeholder="Briefly describe the seminar..." id="description"></textarea>
                                 </div>
                             </div>
 
@@ -85,15 +91,6 @@
                 </div>
             </div>
         </div>
-
-        <div class="py-6 text-center mt-4">
-            <p class="mb-0 fs-4 text-muted">
-                &copy; @DateTime.Now.Year Design and Developed by
-                <a href="#" class="pe-1 text-primary text-decoration-underline fw-bold">
-                    WAIZ WEB & AI SOLUTIONS
-                </a>
-            </p>
-        </div>
     </div>
 </div>
 
@@ -102,34 +99,59 @@
 
 <script>
     $("#submitBtn").click(function () {
-
+        // FormData Object for Image and Fields
         var formData = new FormData();
-        formData.append("title", $("#title").val());
-        formData.append("venue", $("#venue").val());
-        formData.append("file", $("#file")[0].files[0]); 
-        formData.append("Users", $("#Users").val());
-        formData.append("description", $("#description").val());
+        
+        // Pick values from IDs
+        var title = $("#title").val();
+        var venue = $("#venue").val();
+        var eventDate = $("#eventDate").val(); // Picked Date
+        var userId = $("#Users").val();
+        var desc = $("#description").val();
+        var fileInput = $("#file")[0].files[0];
+
+        // Validation
+        if (!title || !eventDate || !venue) {
+            Swal.fire("Wait!", "Bhai, Title, Date aur Venue lazmi bharein.", "warning");
+            return;
+        }
+
+        // Append to FormData
+        formData.append("title", title);
+formData.append("venue", venue);
+formData.append("eventDate", eventDate); 
+formData.append("UserId", userId); // Key name matches Controller parameter "UserId"
+formData.append("description", desc);
+if (fileInput) {
+    formData.append("file", fileInput); // Key name matches "file"
+}
+
+        // Loading state
+        $(this).prop('disabled', true).html('<span class="spinner-border spinner-border-sm me-2"></span>Creating...');
 
         $.ajax({
             url: '/Admin/AddSeminar',
             type: 'POST',
             data: formData,
-            processData: false, 
-            contentType: false, 
+            processData: false,
+            contentType: false,
             success: function (response) {
                 Swal.fire({
                     icon: 'success',
-                    title: 'Success',
-                    text: response.success
+                    title: 'Zabardast!',
+                    text: 'Seminar successfully add ho gaya hai.'
                 });
                 $("#seminarForm")[0].reset();
             },
             error: function () {
                 Swal.fire({
                     icon: 'error',
-                    title: 'Server Error',
-                    text: 'Something went wrong!'
+                    title: 'Opps!',
+                    text: 'Server pe kuch masla aa raha hai.'
                 });
+            },
+            complete: function() {
+                $("#submitBtn").prop('disabled', false).html('<i class="fa fa-plus-circle me-2"></i> Create Seminar');
             }
         });
     });

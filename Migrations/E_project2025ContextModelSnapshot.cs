@@ -17,7 +17,7 @@ namespace E_project2025.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "10.0.0")
+                .HasAnnotation("ProductVersion", "10.0.2")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -209,9 +209,13 @@ namespace E_project2025.Migrations
 
                     b.Property<string>("UserId")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("SeminarId");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("SeminarRegistrations");
                 });
@@ -277,6 +281,9 @@ namespace E_project2025.Migrations
                     b.Property<string>("Venue")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("conductedon")
+                        .HasColumnType("datetime2");
 
                     b.HasKey("Id");
 
@@ -458,6 +465,25 @@ namespace E_project2025.Migrations
                     b.Navigation("Survay");
 
                     b.Navigation("User");
+                });
+
+            modelBuilder.Entity("E_project2025.Models.SeminarRegistration", b =>
+                {
+                    b.HasOne("E_project2025.Models.seminar", "seminar")
+                        .WithMany()
+                        .HasForeignKey("SeminarId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("E_project2025.Areas.Identity.Data.E_project2025User", "users")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("seminar");
+
+                    b.Navigation("users");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

@@ -1,0 +1,104 @@
+﻿@model IEnumerable<E_project2025.Models.ContactModel>
+
+@{
+    ViewData["Title"] = "Contact Messages";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<div class="body-wrapper">
+    <div class="container-fluid">
+        <div class="card card-body py-3 shadow-none position-relative overflow-hidden mb-4">
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <div>
+                    <h4 class="fw-semibold mb-1">Contact Inquiries</h4>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb mb-0">
+                            <li class="breadcrumb-item"><a class="text-muted" href="/Admin/Index">Dashboard</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Messages</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <div class="card w-100">
+            <div class="card-body p-4">
+                <div class="table-responsive">
+                    <table class="table table-hover align-middle mb-0">
+                        <thead class="text-dark fs-4 bg-light">
+                            <tr>
+                                <th class="border-bottom-0"><h6 class="fw-semibold mb-0">Sender Name</h6></th>
+                                <th class="border-bottom-0"><h6 class="fw-semibold mb-0">Email Address</h6></th>
+                                <th class="border-bottom-0"><h6 class="fw-semibold mb-0">Message Brief</h6></th>
+                                <th class="border-bottom-0 text-center"><h6 class="fw-semibold mb-0">Actions</h6></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if (!Model.Any())
+                            {
+                                <tr>
+                                    <td colspan="4" class="text-center py-5">
+                                        <i class="ti ti-mail-off fs-8 text-muted d-block mb-2"></i>
+                                        <p class="text-muted">No new messages found.</p>
+                                    </td>
+                                </tr>
+                            }
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td class="border-bottom-0">
+                                        <div class="d-flex align-items-center">
+                                            <div class="bg-light-primary text-primary rounded-circle p-2 d-flex align-items-center justify-content-center me-3" style="width: 40px; height: 40px;">
+                                                <i class="ti ti-user fs-5"></i>
+                                            </div>
+                                            <h6 class="fw-semibold mb-0">@item.Name</h6>
+                                        </div>
+                                    </td>
+                                    <td class="border-bottom-0">
+                                        <p class="mb-0 fw-normal text-muted">@item.Email</p>
+                                    </td>
+                                    <td class="border-bottom-0">
+                                        <p class="mb-0 fw-normal text-truncate" style="max-width: 250px;">
+                                            @item.Message
+                                        </p>
+                                    </td>
+                                    <td class="border-bottom-0 text-center">
+                                        <div class="dropdown dropstart">
+                                            <a href="#" class="text-muted" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <i class="ti ti-dots-vertical fs-6"></i>
+                                            </a>
+                                            <ul class="dropdown-menu shadow-sm" aria-labelledby="dropdownMenuButton">
+                                                <li>
+                                                    <a class="dropdown-item d-flex align-items-center gap-2" asp-action="Details" asp-route-id="@item.Id">
+                                                        <i class="ti ti-eye fs-4 text-info"></i> View Details
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item d-flex align-items-center gap-2" asp-action="Edit" asp-route-id="@item.Id">
+                                                        <i class="ti ti-edit fs-4 text-warning"></i> Edit
+                                                    </a>
+                                                </li>
+                                                <li><hr class="dropdown-divider"></li>
+                                                <li>
+                                                    <a class="dropdown-item d-flex align-items-center gap-2 text-danger" asp-action="Delete" asp-route-id="@item.Id" onclick="return confirm('Delete this message?')">
+                                                        <i class="ti ti-trash fs-4"></i> Delete
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="py-6 text-center">
+            <p class="mb-0 fs-4 text-muted">
+                &copy; @DateTime.Now.Year Dashboard Management System
+            </p>
+        </div>
+    </div>
+</div>

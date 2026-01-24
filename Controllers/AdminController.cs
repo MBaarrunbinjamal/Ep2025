@@ -164,20 +164,20 @@ namespace E_project2025.Controllers
 
         [HttpPost]
         public async Task<IActionResult> AddSeminar(
-      string title,
-      string venue,
-      IFormFile file,
-      string Users,
-      string description)
+    string title,
+    string venue,
+    IFormFile file, // AJAX key "file"
+    string UserId,  // AJAX key "UserId" (Pehle "Users" tha)
+    string description,
+    DateTime eventDate // AJAX key "eventDate"
+)
         {
             string filename = null;
 
             if (file != null && file.Length > 0)
             {
                 string uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads");
-
-                if (!Directory.Exists(uploadsFolder))
-                    Directory.CreateDirectory(uploadsFolder);
+                if (!Directory.Exists(uploadsFolder)) Directory.CreateDirectory(uploadsFolder);
 
                 filename = Guid.NewGuid() + Path.GetExtension(file.FileName);
                 string filePath = Path.Combine(uploadsFolder, filename);
@@ -192,9 +192,10 @@ namespace E_project2025.Controllers
             {
                 Title = title,
                 Venue = venue,
-                UserId = Users,
+                UserId = UserId, // Yahan UserId assign hoga
                 Description = description,
-                ImageUrl = filename
+                ImageUrl = filename,
+                conductedon = eventDate
             };
 
             dbcontext.seminar.Add(obj);
@@ -202,7 +203,6 @@ namespace E_project2025.Controllers
 
             return Json(new { success = "Seminar submitted successfully!" });
         }
-
 
         [Authorize]
         public IActionResult MyAnswers()
@@ -236,6 +236,20 @@ namespace E_project2025.Controllers
 
             return Ok();
         }
+        public IActionResult fetrchcontact()
+        {
+            var contact = dbcontext.ContactModels.ToList();
+            return View(contact);
+        }
+        public IActionResult fetchseminarregisteration()
+        {
+            var register = dbcontext.SeminarRegistrations
+    .Include(a => a.users)
+    .Include(a => a.seminar)
+  
+    .ToList();
 
+            return View(register);
+        }
     }
 }

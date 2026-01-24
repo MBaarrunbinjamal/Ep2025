@@ -1451,9 +1451,11 @@ wwwroot\uploads\006c1cdc-e9d3-4c56-b6bf-705611fc8d4f.jpeg
 wwwroot\uploads\29fae956-c664-494c-8fb0-acb0c8cd8d31.png
 wwwroot\uploads\304a19e1-e10b-4ee8-aca7-c4ee77cd4968.jpeg
 wwwroot\uploads\3e376ff2-da5f-49db-ae0b-e965c7125ffb.jpeg
+wwwroot\uploads\471983d8-099e-40ea-bdc1-13f96a078efd.jpeg
 wwwroot\uploads\65c13e53-547c-4b57-9a48-039c2019c77f.jpg
 wwwroot\uploads\896475bd-7d23-4158-bc8d-c58f14824117.jpeg
 wwwroot\uploads\a4862438-37e1-4766-85e3-495666f79195.jpeg
+wwwroot\uploads\f0b13084-137a-4b3f-a5a1-aadedca54013.jpeg
 wwwroot\user\css\bootstrap.min.css
 wwwroot\user\css\style.css
 wwwroot\user\img\about.jpg

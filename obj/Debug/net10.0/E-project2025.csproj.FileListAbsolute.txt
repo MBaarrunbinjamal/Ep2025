@@ -19,9 +19,6 @@ D:\Baarrun\Ep2025\bin\Debug\net10.0\Microsoft.Bcl.AsyncInterfaces.dll
 D:\Baarrun\Ep2025\bin\Debug\net10.0\Microsoft.Bcl.Cryptography.dll
 D:\Baarrun\Ep2025\bin\Debug\net10.0\Microsoft.Build.dll
 D:\Baarrun\Ep2025\bin\Debug\net10.0\Microsoft.Build.Framework.dll
-D:\Baarrun\Ep2025\bin\Debug\net10.0\Microsoft.Build.Tasks.Core.dll
-D:\Baarrun\Ep2025\bin\Debug\net10.0\Microsoft.Build.Utilities.Core.dll
-D:\Baarrun\Ep2025\bin\Debug\net10.0\Microsoft.CodeAnalysis.AnalyzerUtilities.dll
 D:\Baarrun\Ep2025\bin\Debug\net10.0\Microsoft.CodeAnalysis.dll
 D:\Baarrun\Ep2025\bin\Debug\net10.0\Microsoft.CodeAnalysis.CSharp.dll
 D:\Baarrun\Ep2025\bin\Debug\net10.0\Microsoft.CodeAnalysis.CSharp.Features.dll
@@ -78,14 +75,10 @@ D:\Baarrun\Ep2025\bin\Debug\net10.0\System.Composition.Hosting.dll
 D:\Baarrun\Ep2025\bin\Debug\net10.0\System.Composition.Runtime.dll
 D:\Baarrun\Ep2025\bin\Debug\net10.0\System.Composition.TypedParts.dll
 D:\Baarrun\Ep2025\bin\Debug\net10.0\System.Configuration.ConfigurationManager.dll
-D:\Baarrun\Ep2025\bin\Debug\net10.0\System.Formats.Nrbf.dll
 D:\Baarrun\Ep2025\bin\Debug\net10.0\System.IdentityModel.Tokens.Jwt.dll
 D:\Baarrun\Ep2025\bin\Debug\net10.0\System.Memory.Data.dll
 D:\Baarrun\Ep2025\bin\Debug\net10.0\System.Reflection.MetadataLoadContext.dll
-D:\Baarrun\Ep2025\bin\Debug\net10.0\System.Resources.Extensions.dll
 D:\Baarrun\Ep2025\bin\Debug\net10.0\System.Security.Cryptography.ProtectedData.dll
-D:\Baarrun\Ep2025\bin\Debug\net10.0\System.Security.Permissions.dll
-D:\Baarrun\Ep2025\bin\Debug\net10.0\System.Windows.Extensions.dll
 D:\Baarrun\Ep2025\bin\Debug\net10.0\af\Humanizer.resources.dll
 D:\Baarrun\Ep2025\bin\Debug\net10.0\ar\Humanizer.resources.dll
 D:\Baarrun\Ep2025\bin\Debug\net10.0\az\Humanizer.resources.dll
@@ -256,7 +249,6 @@ D:\Baarrun\Ep2025\bin\Debug\net10.0\runtimes\win\lib\net9.0\Microsoft.Data.SqlCl
 D:\Baarrun\Ep2025\bin\Debug\net10.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
 D:\Baarrun\Ep2025\bin\Debug\net10.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
 D:\Baarrun\Ep2025\bin\Debug\net10.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-D:\Baarrun\Ep2025\bin\Debug\net10.0\runtimes\win\lib\net9.0\System.Windows.Extensions.dll
 D:\Baarrun\Ep2025\obj\Debug\net10.0\E-project2025.csproj.AssemblyReference.cache
 D:\Baarrun\Ep2025\obj\Debug\net10.0\rpswa.dswa.cache.json
 D:\Baarrun\Ep2025\obj\Debug\net10.0\E-project2025.GeneratedMSBuildEditorConfig.editorconfig
@@ -1496,3 +1488,4 @@ D:\Baarrun\Ep2025\obj\Debug\net10.0\refint\E-project2025.dll
 D:\Baarrun\Ep2025\obj\Debug\net10.0\E-project2025.pdb
 D:\Baarrun\Ep2025\obj\Debug\net10.0\E-project2025.genruntimeconfig.cache
 D:\Baarrun\Ep2025\obj\Debug\net10.0\ref\E-project2025.dll
+D:\Baarrun\Ep2025\bin\Debug\net10.0\Microsoft.VisualStudio.SolutionPersistence.dll

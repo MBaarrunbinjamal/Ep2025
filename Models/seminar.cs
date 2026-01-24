@@ -9,6 +9,7 @@ namespace E_project2025.Models
         public string Title { get; set; }
         public string Description { get; set; }
         public string ImageUrl { get; set; }
+        public DateTime conductedon { get; set; }
         public string Venue { get; set; }
         public string UserId { get; set; } // Add this property to fix CS0117
     }
